@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>G_bg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="2019年第十届蓝桥杯B组C/C++国赛部分题解 怎么说，这个国赛给我整自闭了。五个填空，五个大题，我就写五个填空加第一个大题吧。后面的一言难尽。  A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数列,（2019＜x＜y）； 思路：暴力答案：7020 ####代码12345678910111213#include&amp;lt;bits/stdc++.h&amp;gt;us">
+<meta property="og:type" content="article">
+<meta property="og:title" content="G_bg">
+<meta property="og:url" content="http://zxcvbnmgbg.github.io/2019/05/30/2019年第十届蓝桥杯B组C-C++国赛部分题解/index.html">
+<meta property="og:site_name" content="G_bg">
+<meta property="og:description" content="2019年第十届蓝桥杯B组C/C++国赛部分题解 怎么说，这个国赛给我整自闭了。五个填空，五个大题，我就写五个填空加第一个大题吧。后面的一言难尽。  A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数列,（2019＜x＜y）； 思路：暴力答案：7020 ####代码12345678910111213#include&amp;lt;bits/stdc++.h&amp;gt;us">
+<meta property="og:locale" content="Chinese">
+<meta property="og:updated_time" content="2019-05-30T13:12:32.642Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="G_bg">
+<meta name="twitter:description" content="2019年第十届蓝桥杯B组C/C++国赛部分题解 怎么说，这个国赛给我整自闭了。五个填空，五个大题，我就写五个填空加第一个大题吧。后面的一言难尽。  A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数列,（2019＜x＜y）； 思路：暴力答案：7020 ####代码12345678910111213#include&amp;lt;bits/stdc++.h&amp;gt;us">
+  
+    <link rel="alternate" href="/atom.xml" title="G_bg" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/default-avatar.webp">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/highlight.css">
+  <script>
+  let antiquityStorage = window.sessionStorage.getItem('antiquitySessionStorage');
+  if (antiquityStorage == '' || antiquityStorage == null) {
+    var antiquityLoader = '<div id="loaderbox"><div class="loader"><div class="load-roll"><div class="load-top"></div><div class="load-right"></div><div class="load-bottom"></div></div></div></div>';
+    document.write(antiquityLoader);
+    document.body.style.overflow = 'hidden'
+  }
+  </script>
+</head>
+</html>
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title>首页</a>
+      
+        <a class="nav-item" href="/archives" title>归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-2019年第十届蓝桥杯B组C-C++国赛部分题解" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+  <div class="article-meta">
+    <a href="/2019/05/30/2019年第十届蓝桥杯B组C-C++国赛部分题解/" class="article-date">
+  <time datetime="2019-05-30T14:15:27.518Z" itemprop="datePublished">2019-05-30</time>
+</a>
+    
+    
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h1 id="2019年第十届蓝桥杯B组C-C-国赛部分题解"><a href="#2019年第十届蓝桥杯B组C-C-国赛部分题解" class="headerlink" title="2019年第十届蓝桥杯B组C/C++国赛部分题解"></a>2019年第十届蓝桥杯B组C/C++国赛部分题解</h1><hr>
+<p>怎么说，这个国赛给我整自闭了。五个填空，五个大题，我就写五个填空加第一个大题吧。后面的一言难尽。</p>
+<hr>
+<h3 id="A"><a href="#A" class="headerlink" title="A."></a>A.</h3><p>题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数列,（2019＜x＜y）；</p>
+<p>思路：暴力<br>答案：7020</p>
+<p>####代码<br><div class="highlight-box" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main() &#123;</span><br><span class="line">	int x = 2019*2019;</span><br><span class="line">	for(int i = 2020;i &lt; 8000;i++)&#123;</span><br><span class="line">		for(int j = i+1;j &lt; 8000;j++)&#123;</span><br><span class="line">			int a = i*i;</span><br><span class="line">			int b = j*j;</span><br><span class="line">			if(a-x == b-a) cout &lt;&lt; i+j &lt;&lt; endl;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></p>
+<h3 id="B"><a href="#B" class="headerlink" title="B."></a>B.</h3><p>题意：将2019拆成两个素数和（应该是两个吧，有人说任意个，忘了）,有几种方式，交换两个加数算一种，如2+2017 = 2019，2017+2 = 2019算一种</p>
+<p>思路：暴力，我当两个做的<br>答案：1</p>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><div class="highlight-box" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int p[2020],prime[2020],pri;</span><br><span class="line">int main() &#123;</span><br><span class="line">	for(int i = 2;i &lt;= 2019;i++)&#123;</span><br><span class="line">		bool flag = 0;</span><br><span class="line">		for(int j = 2;j &lt;= (int)sqrt(i);j++)&#123;</span><br><span class="line">			if(i%j == 0)&#123;</span><br><span class="line">				flag = 1;</span><br><span class="line">				break;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		if(!flag) p[i] = 1,prime[++pri] = i;</span><br><span class="line">	&#125;</span><br><span class="line">	int sum = 0;</span><br><span class="line">	for(int i = 1;i &lt;= pri;i++)&#123;</span><br><span class="line">		int x = 2019-prime[i];</span><br><span class="line">		if(p[x]) sum++;</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; sum / 2 &lt;&lt; endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h3 id="C"><a href="#C" class="headerlink" title="C."></a>C.</h3><p>题意：约数有x个的最小整数y，记$Sx$ = y，如$S1$ = 1，$S2$ = 2，$S3$ = 4，求$S100$</p>
+<p>思路：暴力<br>答案：45360</p>
+<h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><div class="highlight-box" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">const int maxn = 1e5+10;</span><br><span class="line">int f[maxn];</span><br><span class="line">int yue(int x)&#123;</span><br><span class="line">	int sum = 0;</span><br><span class="line">	for(int i = 1;i &lt;= (int)sqrt(x);i++)&#123;</span><br><span class="line">		if(x%i == 0) &#123;</span><br><span class="line">			sum++;</span><br><span class="line">			if(x/i != i) sum++;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return sum;</span><br><span class="line">&#125;</span><br><span class="line">int main() &#123;</span><br><span class="line">	for(int i = 1;i &lt; 100000;i++)&#123;</span><br><span class="line">		int y = yue(i);</span><br><span class="line">		if(f[y]) continue;</span><br><span class="line">		f[y] = i;</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; f[100] &lt;&lt; endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h3 id="D"><a href="#D" class="headerlink" title="D."></a>D.</h3><p>题意：将一个7*7的方格沿着边剪开后，旋转右边那块拼在左边那块的不规则处，要求拼成的还是一个矩形，求有多少种裁剪方法</p>
+<p>思路：沿着副对角线上三角和下三角对称。显而易见，剪得边只能向下或向右，统计到副对角线一共有多少种方法<br>答案：127</p>
+<h4 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h4><div class="highlight-box" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">const int maxn = 1e5+10;</span><br><span class="line">int dp[8][8];</span><br><span class="line">int main() &#123;</span><br><span class="line">	for(int i = 1;i &lt;= 7;i++) dp[i][0] = 1;</span><br><span class="line">	int sum = 0;</span><br><span class="line">	for(int i = 1;i &lt;= 7;i++)&#123;</span><br><span class="line">		for(int j = 1;j &lt;= 8-i;j++)&#123;</span><br><span class="line">			dp[i][j] += dp[i-1][j];</span><br><span class="line">			dp[i][j] += dp[i][j-1];</span><br><span class="line">		&#125;</span><br><span class="line">		sum += dp[i][8-i];</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; sum &lt;&lt; endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h3 id="E"><a href="#E" class="headerlink" title="E."></a>E.</h3><p>题意：在一个5*5的方格中，起点是（1，1）沿着线走，计算不超过12步走回（1，1）的方法</p>
+<p>思路：深搜，将5<em>5的方格看成6</em>6，原来在点上就变成了在格子上<br>答案：208</p>
+<h4 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h4><div class="highlight-box" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">const int maxn = 1e5+10;</span><br><span class="line">const int dx[4] = &#123;0,0,-1,1&#125;;</span><br><span class="line">const int dy[4] = &#123;-1,1,0,0&#125;;</span><br><span class="line">int m[7][7],sum;</span><br><span class="line">bool valid(int x,int y)&#123;</span><br><span class="line">	if(x &lt; 1 || x &gt; 6 || y &lt; 1 || y &gt; 6) return false;</span><br><span class="line">	return true;</span><br><span class="line">&#125;</span><br><span class="line">void dfs(int x,int y,int step)&#123;</span><br><span class="line">	if(step &gt; 12) return ;</span><br><span class="line">	if(step != 0 &amp;&amp; step &lt;= 12)&#123;</span><br><span class="line">		if(x == 1 &amp;&amp; y == 1)&#123;</span><br><span class="line">			sum++;</span><br><span class="line">			return ;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	for(int i = 0;i &lt; 4;i++)&#123;</span><br><span class="line">		int next_x = x+dx[i];</span><br><span class="line">		int next_y = y+dy[i];</span><br><span class="line">		if(!valid(next_x,next_y) || m[next_x][next_y]) continue;</span><br><span class="line">		m[next_x][next_y] = 1;</span><br><span class="line">		dfs(next_x,next_y,step+1);</span><br><span class="line">		m[next_x][next_y] = 0;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">int main() &#123;</span><br><span class="line">	dfs(1,1,0);</span><br><span class="line">	cout &lt;&lt; sum &lt;&lt; endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h3 id="F"><a href="#F" class="headerlink" title="F."></a>F.</h3><p>题意：给你两个字符串S和T，|S| ≥ |T|，求最少改变S中多少个字符使得在去掉一些不需要的字符后S = T</p>
+<p>数据范围最大是（|S|，|T| ≤ 1000）</p>
+<p>思路：最长公共子序列，由于是去掉一些不需要的数，所以当从T中第i位找是否和S中有相同时，得从S得第i位开始，前面不能匹配。同理后面也需要一个界限。局部的最长公共子序列</p>
+<h4 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h4><div class="highlight-box" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="PLAIN"><figure class="iseeu highlight /plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">const int maxn = 1e3+10;</span><br><span class="line">char s[maxn],t[maxn];</span><br><span class="line">int dp[maxn][maxn];</span><br><span class="line">int main() &#123;</span><br><span class="line">	int tt;cin &gt;&gt; tt;</span><br><span class="line">	while(tt--)&#123;</span><br><span class="line">		cin &gt;&gt; s+1 &gt;&gt; t+1;</span><br><span class="line">		int len_s = strlen(s+1);</span><br><span class="line">		int len_t = strlen(t+1);</span><br><span class="line">		int ma = 0;</span><br><span class="line">		for(int i = 1;i &lt;= len_t;i++)&#123;</span><br><span class="line">			for(int j = i;j &lt;= len_s-(len_t-i);j++)&#123;</span><br><span class="line">				if(t[i] == s[j]) dp[i][j] = dp[i-1][j-1]+1;</span><br><span class="line">				else dp[i][j] = max(dp[i-1][j],dp[i][j-1]);</span><br><span class="line">				ma = max(ma,dp[i][j]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		cout &lt;&lt; len_t-ma &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>以上题目不保证正确性<br>G和I，也就是第七和第九题，暴力只能过最水的数据，另外两题没写</p>
+
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2019/05/30/2019东北地区大学生程序设计竞赛(东北电力大学)前四题/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title"></div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/default-avatar.webp" title="图片来自网络">
+    <h3 class="avatar-name">
+      
+        一路烟霞
+      
+    </h3>
+    <p class="avatar-slogan">
+      特别耐撕的小前端，资深的打酱油攻城狮。
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/30/2019年第十届蓝桥杯B组C-C++国赛部分题解/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/30/2019东北地区大学生程序设计竞赛(东北电力大学)前四题/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://yiluyanxia.github.io/" title target="_blank">一路眼瞎</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2019 G_bg &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a href="https://github.com/yiluyanxia/hexo-theme-antiquity">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>
