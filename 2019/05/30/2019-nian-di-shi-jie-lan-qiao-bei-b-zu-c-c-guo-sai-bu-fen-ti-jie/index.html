@@ -638,24 +638,24 @@ int main() {
     </div>
 
     
-        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
 
 <div class="card gitalk-card" data-aos="fade-up">
     <div id="gitalk-container" class="card-content"></div>
 </div>
 
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+<script src="/libs/gitalk/gitalk.min.js"></script>
 <script>
     let gitalk = new Gitalk({
         clientID: 'fb84dfdb9c6241325162',
         clientSecret: '8e4b6d37d016e1e376c2670fb08356f78a4f1a14',
-        repo: 'https://github.com/frankgbg/frankgbg.github.io/issues',
+        repo: 'frankgbg.github.io',
         owner: 'frankgbg',
-        admin: 'frankgbg',
+        admin: "frankgbg",
         id: '2019-05-30T20-33-27',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
-
     gitalk.render('gitalk-container');
 </script>
     
