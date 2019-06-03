@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</title>
+      <link href="/2019/06/03/hexo-zhi-hexo-theme-matery-zhu-ti-kan-ban-niang-yu-di-bu-fang-wen-ren-shu-chong-tu-wen-ti/"/>
+      <url>/2019/06/03/hexo-zhi-hexo-theme-matery-zhu-ti-kan-ban-niang-yu-di-bu-fang-wen-ren-shu-chong-tu-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题"><a href="#hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题" class="headerlink" title="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题"></a>hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</h1><hr><hr><p>打开hexo-theme-matery\layout\_partial中的footer.ejs，将本站总访问量和访客数的代码改为如下：</p><pre><code>&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalTraffic) { %&gt;    &lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;    &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;    本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt;&lt;% } %&gt;&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalNumberOfvisitors) { %&gt;    &lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;    次,&amp;nbsp;    &lt;i class=&quot;fa fa-users&quot;&gt;&lt;/i&gt;    访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt; 人&lt;% } %&gt;</code></pre><p>变化就在下面两句，将后面的＜/span＞写在前面了</p><pre><code>&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;</code></pre><p>本人没学过前端的东西，格式上的小问题吧。和我好友找这个问题找了好久，终于解决了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第十届蓝桥杯B组C/C++国赛部分题解</title>
       <link href="/2019/05/30/2019-nian-di-shi-jie-lan-qiao-bei-b-zu-c-c-guo-sai-bu-fen-ti-jie/"/>
       <url>/2019/05/30/2019-nian-di-shi-jie-lan-qiao-bei-b-zu-c-c-guo-sai-bu-fen-ti-jie/</url>
