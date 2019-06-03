@@ -26,9 +26,10 @@
     <style type="text/css">
         
     </style>
-
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-<link rel="stylesheet" href="/css/prism-twilight.css" type="text/css">
+
+    <script src="https://v1.hitokoto.cn/?c=d&encode=js&select=%23hitokoto" defer></script>
+<link rel="stylesheet" href="/css/prism-ghcolors.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
@@ -302,7 +303,17 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories" target="_blank">1</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags" target="_blank">3</a></span>
+    <span class="name">标签</span>
+</div>
 
                     </div>
                     <div class="col s12 m12 l4">
@@ -320,15 +331,31 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories" target="_blank">1</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags" target="_blank">3</a></span>
+    <span class="name">标签</span>
+</div>
 
                                 </div>
                                 <div class="title">G_bg</div>
-                                <div class="career">Student#</div>
+                                <div class="career">Student</div>
                                 <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
                                     
     <a href="https://blog.csdn.net/weixin_43992169" class="tooltipped" target="_blank" data-tooltip="访问我的csdn" data-position="top" data-delay="50">
         <i class="fa fa-copyright"></i>
+    </a>
+
+
+
+    <a href="frank_gbg@sina.com" class="tooltipped" target="_blank" data-tooltip="访问我的weibo" data-position="top" data-delay="50">
+        <i class="fa fa-email"></i>
     </a>
 
 
@@ -338,6 +365,10 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     </a>
 
 
+
+    <a href="mailto:frank_gbg@sina.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
 
 
 
@@ -356,11 +387,21 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 
 
+    <a href="frank_gbg@sina.com" class="tooltipped" target="_blank" data-tooltip="访问我的weibo" data-position="top" data-delay="50">
+        <i class="fa fa-email"></i>
+    </a>
+
+
+
     <a href="https://weibo.com/7172019303/profile?topnav=1&amp;wvr=6" class="tooltipped" target="_blank" data-tooltip="访问我的weibo" data-position="top" data-delay="50">
         <i class="fa fa-weibo"></i>
     </a>
 
 
+
+    <a href="mailto:frank_gbg@sina.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
 
 
 
@@ -473,7 +514,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [],
+                data: [{"name":"竞赛","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -497,7 +538,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["蓝桥杯","ACM","东北地区赛"]
             }
         ],
         yAxis: [
@@ -510,7 +551,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -600,6 +641,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;其他技能</div>
         <div class="tag-chips center-align">
             
+            
+            <a href="/tags/蓝桥杯/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">蓝桥杯</span>
+            </a>
+            
+            
+            
+            
+            
+            <a href="/tags/东北地区赛/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">东北地区赛</span>
+            </a>
+            
+            
         </div>
     </div>
     
@@ -657,21 +712,13 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            本站由&copy;<a href="https://frankgbg.github.io/" target="_blank">G_bg</a>基于
-            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
-            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
-
-            
-                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">3.4k</span>
-            
 
             
 			
-                <br>
+                
                 
                 <span id="busuanzi_container_site_pv">
-                    <i class="fa fa-heart-o"></i>
+                    <i class="fa fa-heart"></i>
                     本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
                 </span>
                 
@@ -683,10 +730,22 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 </span>
                 
             
+
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">3.4k</span>
+            
+
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
     <a href="https://blog.csdn.net/weixin_43992169" class="tooltipped" target="_blank" data-tooltip="访问我的csdn" data-position="top" data-delay="50">
         <i class="fa fa-copyright"></i>
+    </a>
+
+
+
+    <a href="frank_gbg@sina.com" class="tooltipped" target="_blank" data-tooltip="访问我的weibo" data-position="top" data-delay="50">
+        <i class="fa fa-email"></i>
     </a>
 
 
@@ -697,11 +756,15 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 
 
+    <a href="mailto:frank_gbg@sina.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
 
 
 
 </div>
-    </div>
+</div>
 </footer>
 
 <div class="progress-bar"></div>
