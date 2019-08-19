@@ -36,7 +36,7 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
 
     <script src="https://v1.hitokoto.cn/?c=d&encode=js&select=%23hitokoto" defer></script>
-<link rel="stylesheet" href="/css/prism-vs.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-base16-ateliersulphurpool.light.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
@@ -218,9 +218,9 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
         border: 0;
         transform: scale(1.1);
     }
-
+    
     .github-corner svg {
-        color: #0f9d58;
+        color: #40E0D0;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -266,7 +266,7 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559794203830&di=fb28b36f9ecfffef515efb4617034301&imgtype=0&src=http%3A%2F%2Fd.ifengimg.com%2Fw600%2Fe0.ifengimg.com%2F07%2F2018%2F1121%2FBC78BF89E566B76D20AB67C152F16DF218D66C37_size152_w887_h500.jpeg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -454,8 +454,7 @@ int main() {
         }
     }
     return 0;
-}
-</code></pre><h3 id="B"><a href="#B" class="headerlink" title="B."></a>B.</h3><p>题意：将2019拆成两个素数和（应该是两个吧，有人说任意个，忘了）,有几种方式，交换两个加数算一种，如2+2017 = 2019，2017+2 = 2019算一种</p>
+}</code></pre><h3 id="B"><a href="#B" class="headerlink" title="B."></a>B.</h3><p>题意：将2019拆成两个素数和（应该是两个吧，有人说任意个，忘了）,有几种方式，交换两个加数算一种，如2+2017 = 2019，2017+2 = 2019算一种</p>
 <p>思路：暴力，我当两个做的<br>答案：1</p>
 <h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
 using namespace std;
@@ -478,8 +477,7 @@ int main() {
     }
     cout &lt;&lt; sum / 2 &lt;&lt; endl;
     return 0;
-}
-</code></pre><h3 id="C"><a href="#C" class="headerlink" title="C."></a>C.</h3><p>题意：约数有x个的最小整数y，记$Sx$ = y，如$S1$ = 1，$S2$ = 2，$S3$ = 4，求$S100$</p>
+}</code></pre><h3 id="C"><a href="#C" class="headerlink" title="C."></a>C.</h3><p>题意：约数有x个的最小整数y，记$Sx$ = y，如$S1$ = 1，$S2$ = 2，$S3$ = 4，求$S100$</p>
 <p>思路：暴力<br>答案：45360</p>
 <h4 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
 using namespace std;
@@ -503,8 +501,7 @@ int main() {
     }
     cout &lt;&lt; f[100] &lt;&lt; endl;
     return 0;
-}
-</code></pre><h3 id="D"><a href="#D" class="headerlink" title="D."></a>D.</h3><p>题意：将一个7*7的方格沿着边剪开后，旋转右边那块拼在左边那块的不规则处，要求拼成的还是一个矩形，求有多少种裁剪方法</p>
+}</code></pre><h3 id="D"><a href="#D" class="headerlink" title="D."></a>D.</h3><p>题意：将一个7*7的方格沿着边剪开后，旋转右边那块拼在左边那块的不规则处，要求拼成的还是一个矩形，求有多少种裁剪方法</p>
 <p>思路：沿着副对角线上三角和下三角对称。显而易见，剪得边只能向下或向右，统计到副对角线一共有多少种方法<br>答案：127</p>
 <h4 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
 using namespace std;
@@ -522,8 +519,7 @@ int main() {
     }
     cout &lt;&lt; sum &lt;&lt; endl;
     return 0;
-}
-</code></pre><h3 id="E"><a href="#E" class="headerlink" title="E."></a>E.</h3><p>题意：在一个5*5的方格中，起点是（1，1）沿着线走，计算不超过12步走回（1，1）的方法</p>
+}</code></pre><h3 id="E"><a href="#E" class="headerlink" title="E."></a>E.</h3><p>题意：在一个5*5的方格中，起点是（1，1）沿着线走，计算不超过12步走回（1，1）的方法</p>
 <p>思路：深搜，将5×5的方格看成6×6，原来在点上就变成了在格子上<br>答案：208</p>
 <h4 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
 using namespace std;
@@ -556,8 +552,7 @@ int main() {
     dfs(1,1,0);
     cout &lt;&lt; sum &lt;&lt; endl;
     return 0;
-}
-</code></pre><h3 id="F"><a href="#F" class="headerlink" title="F."></a>F.</h3><p>题意：给你两个字符串S和T，|S| ≥ |T|，求最少改变S中多少个字符使得在去掉一些不需要的字符后S = T</p>
+}</code></pre><h3 id="F"><a href="#F" class="headerlink" title="F."></a>F.</h3><p>题意：给你两个字符串S和T，|S| ≥ |T|，求最少改变S中多少个字符使得在去掉一些不需要的字符后S = T</p>
 <p>数据范围最大是（|S|，|T| ≤ 1000）</p>
 <p>思路：最长公共子序列，由于是去掉一些不需要的数，所以当从T中第i位找是否和S中有相同时，得从S的第i位开始，前面不能匹配。同理后面也需要一个界限。局部的最长公共子序列</p>
 <h4 id="代码-5"><a href="#代码-5" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
@@ -582,8 +577,7 @@ int main() {
         cout &lt;&lt; len_t-ma &lt;&lt; endl;
     }
     return 0;
-}
-</code></pre><p>以上题目不保证正确性<br>G和I，也就是第七和第九题，暴力只能过最水的数据，另外两题没写</p>
+}</code></pre><p>以上题目不保证正确性<br>G和I，也就是第七和第九题，暴力只能过最水的数据，另外两题没写</p>
 
             </div>
             <hr>
@@ -793,7 +787,8 @@ int main() {
                 <a href="/posts/58045/">
                     <div class="card-image">
                         
-                        <img src="https://huaji8.top/img/live2d/wanko.gif" class="responsive-img" alt="解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题">
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题">
                         
                         <span class="card-title">解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</span>
                     </div>
@@ -838,10 +833,11 @@ int main() {
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/23735/">
+                <a href="/posts/23734/">
                     <div class="card-image">
                         
-                        <img src="https://upload.wikimedia.org/wikipedia/zh/e/e8/Icpc_logo.png" class="responsive-img" alt="第十三届东北地区大学生程序设计竞赛前四题">
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="第十三届东北地区大学生程序设计竞赛前四题">
                         
                         <span class="card-title">第十三届东北地区大学生程序设计竞赛前四题</span>
                     </div>
@@ -999,7 +995,7 @@ int main() {
     enable_page_level_ads: true
   });
 </script>
-<link rel="stylesheet" href="/css/prism-vs.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-base16-ateliersulphurpool.light.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <footer class="page-footer bg-color">
