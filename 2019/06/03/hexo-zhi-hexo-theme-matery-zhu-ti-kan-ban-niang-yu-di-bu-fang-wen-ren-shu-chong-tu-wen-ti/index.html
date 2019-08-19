@@ -8,7 +8,7 @@
     <meta name="description" content="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题
 
 打开hexo-theme-matery\layout\_partial中的footer.ejs，将本站总访问量和访客数的代码改为如下：
-&amp;lt;% if (th">
+123456789101">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -321,7 +321,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        241
+                        247
                     </div>
                     
 
@@ -334,11 +334,11 @@
                 
 				
 				
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
+                    <span id="busuanzi_container_page_pv" class="info-break-policy"></span>
+                    <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                    <span id="busuanzi_value_page_pv"></span>
+                
+                
             </div>
         </div>
         <hr class="clearfix">
@@ -347,22 +347,9 @@
                 <h1 id="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题"><a href="#hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题" class="headerlink" title="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题"></a>hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</h1><hr>
 <hr>
 <p>打开hexo-theme-matery\layout\_partial中的footer.ejs，将本站总访问量和访客数的代码改为如下：</p>
-<pre><code>&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalTraffic) { %&gt;
-    &lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;
-    &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
-    本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt;
-
-&lt;% } %&gt;
-&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalNumberOfvisitors) { %&gt;
-    &lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;
-    次,&amp;nbsp;
-    &lt;i class=&quot;fa fa-users&quot;&gt;&lt;/i&gt;
-    访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt; 人
-&lt;% } %&gt;
-</code></pre><p>变化就在下面两句，将后面的＜/span＞写在前面了</p>
-<pre><code>&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;
-&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;
-</code></pre><p>本人没学过前端的东西，格式上的小问题吧。和我好友找这个问题找了好久，省略一万字的过程…，终于解决了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalTraffic) &#123; %&gt;</span><br><span class="line">    &lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;</span><br><span class="line">    &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;</span><br><span class="line">    本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt;</span><br><span class="line">                </span><br><span class="line">&lt;% &#125; %&gt;</span><br><span class="line">&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalNumberOfvisitors) &#123; %&gt;</span><br><span class="line">    &lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;</span><br><span class="line">    次,&amp;nbsp;</span><br><span class="line">    &lt;i class=&quot;fa fa-users&quot;&gt;&lt;/i&gt;</span><br><span class="line">    访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt; 人</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<p>变化就在下面两句，将后面的＜/span＞写在前面了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;</span><br><span class="line">&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;</span><br></pre></td></tr></table></figure></p>
+<p>本人没学过前端的东西，格式上的小问题吧。和我好友找这个问题找了好久，省略一万字的过程…，终于解决了。</p>
 
             </div>
             <hr>
@@ -696,7 +683,7 @@
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">4.8k</span>
+                <span class="white-color">4.9k</span>
             
 
             
