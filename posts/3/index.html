@@ -4,11 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="主席树，静态区间k-th小数或k-th大数, G_bg">
-    <meta name="description" content="主席树，静态区间k-th小数或k-th大数
-POJ 2104
-主席树理解b是去重离散化后数组，rt[i]表示[1,i]建成的树的根节点，T是是树中节点。
-1.建n+1棵树第0棵树是基础，后面第i棵树在第i-1棵树的基础上建立，每棵树比前一棵">
+    <meta name="keywords" content="解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题, G_bg">
+    <meta name="description" content="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;打开hexo-theme-matery\layout\_partial中的footer.ejs，将本站总访问量和">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +15,7 @@ POJ 2104
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>主席树，静态区间k-th小数或k-th大数 | G_bg</title>
+    <title>解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题 | G_bg</title>
     <link rel="icon" type="image/png" href="/medias/ghost.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -266,13 +265,13 @@ POJ 2104
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        主席树，静态区间k-th小数或k-th大数
+                        解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题
                     </div>
                 </div>
             </div>
@@ -294,8 +293,8 @@ POJ 2104
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/主席树/" target="_blank">
-                                <span class="chip bg-color">主席树</span>
+                            <a href="/tags/hexo/" target="_blank">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -306,8 +305,8 @@ POJ 2104
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/树/" class="post-category" target="_blank">
-                                树
+                            <a href="/categories/hexo/" class="post-category" target="_blank">
+                                hexo
                             </a>
                         
                     </div>
@@ -318,21 +317,21 @@ POJ 2104
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-18
+                    2019-06-03
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        815
+                        253
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        3 分
+                        1 分
                     </div>
                     
                 
@@ -348,76 +347,24 @@ POJ 2104
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="主席树，静态区间k-th小数或k-th大数"><a href="#主席树，静态区间k-th小数或k-th大数" class="headerlink" title="主席树，静态区间k-th小数或k-th大数"></a>主席树，静态区间k-th小数或k-th大数</h1><hr>
-<h3 id="POJ-2104"><a href="#POJ-2104" class="headerlink" title="POJ 2104"></a><a href="http://poj.org/problem?id=2104" target="_blank" rel="noopener">POJ 2104</a></h3><hr>
-<h3 id="主席树理解"><a href="#主席树理解" class="headerlink" title="主席树理解"></a>主席树理解</h3><p>b是去重离散化后数组，rt[i]表示[1,i]建成的树的根节点，T是是树中节点。</p>
-<h4 id="1-建n-1棵树"><a href="#1-建n-1棵树" class="headerlink" title="1.建n+1棵树"></a>1.建n+1棵树</h4><p>第0棵树是基础，后面第i棵树在第i-1棵树的基础上建立，每棵树比前一棵增加大约$\lceil logn \rceil+1$个节点。</p>
-<h4 id="2-建树时"><a href="#2-建树时" class="headerlink" title="2.建树时"></a>2.建树时</h4><p>比较的是当前值在b中的位置和mid，考虑它在哪边，不断递归，直至l == r；形成一个新的分支，该分支上的总个数是前一棵树对应分支的总个数+1。</p>
-<h4 id="3-在查询区间-l-r-中k-th小数时"><a href="#3-在查询区间-l-r-中k-th小数时" class="headerlink" title="3.在查询区间[l,r]中k-th小数时"></a>3.在查询区间[l,r]中k-th小数时</h4><p>r-th棵树和（l-1）-th棵树左分支（也就是小的一边）的差和k比较，考虑k-th小在哪边；$t \geq k$，在左边找k-th小，否则在右边找（k-t）-th小；直至l==r找到b[l]是k-th小数。</p>
-<p>查询区间[l,r]中k-th大数时，在第3步稍加改变差和判断即可。</p>
-<pre><code>#include&lt;iostream&gt;
-#include&lt;algorithm&gt;
-using namespace std;
-typedef long long LL;
-const int maxn = 1e5+10;
-struct Node{
-    int l,r,sum;
-}T[maxn*40];
-int rt[maxn*40],tot;//rt静态主席树,tot所用节点数
-int a[maxn],b[maxn],siz;//b是离散化后数组,siz是离散化后个数
-void build(int &amp;p,int l,int r){//建第0棵树
-    p = ++tot;
-    T[p].sum = 0;
-    if(l == r) return;
-    int mid = (l+r)&gt;&gt;1;
-    build(T[p].l,l,mid);
-    build(T[p].r,mid+1,r);
-}
-void update(int &amp;p,int pre,int l,int r,int k){
-    p = ++tot;//新节点
-    T[p] = T[pre];//共用节点，在下一递归中更新l或r其中一个
-    ++T[p].sum;//沿途走下去的分支(要更新的点)中都要比上一个版本多1
-    if(l == r) return;
-    int mid = (l+r)&gt;&gt;1;
-    if(k &lt;= mid) update(T[p].l,T[pre].l,l,mid,k);//在小的一边
-    else update(T[p].r,T[pre].r,mid+1,r,k);//在大的一边
-}
-int query(int p1,int p2,int l,int r,int k){
-    //l和r如果相同,指k小在这个节点,而且这个节点的下标(对应到b)会被返回 
-    if(l == r) return l;
-    //两棵线段树作差 ，k-th小l作差，k-th大r作差，下面ifelse相应改变
-    int t = T[T[p2].l].sum-T[T[p1].l].sum;
-    int mid = (l+r)&gt;&gt;1;
-    if(k &lt;= t)return query(T[p1].l,T[p2].l,l,mid,k);//k-th小在小的一边
-    else return query(T[p1].r,T[p2].r,mid+1,r,k-t);//k-th小在大的一边，继续找(k-t)-th小
-}
-inline int Find(int x){//找离散化后的下标
-    return lower_bound(b+1,b+siz+1,x)-b;
-}
-int main(int argc, const char *argv[]){
-    ios::sync_with_stdio(0);cin.tie(0);
-    int n,q;cin &gt;&gt; n &gt;&gt; q;
-    for(int i = 1;i &lt;= n;++i){
-        cin &gt;&gt; a[i];
-        b[i] = a[i];
-    }
-    siz = n;
-    sort(b+1,b+siz+1);
-    siz = unique(b+1,b+siz+1)-b-1;//去重后离散化
-    tot = 0;
-    build(rt[0],1,siz);//建第0棵树
-    for(int i = 1;i &lt;= n;++i){
-        int f = Find(a[i]);//找离散化后的下标
-        update(rt[i],rt[i-1],1,siz,f);//建1-n棵树
-    }
-    for(int i = 1;i &lt;= q;++i){
-        int ql,qr,qk;cin &gt;&gt; ql &gt;&gt; qr &gt;&gt; qk;
-        int qq = query(rt[ql-1],rt[qr],1,siz,qk);
-        cout &lt;&lt; b[qq] &lt;&lt; endl;
-    }
-    system(&quot;pause&quot;);
-    return 0;
-}</code></pre>
+                <h1 id="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题"><a href="#hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题" class="headerlink" title="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题"></a>hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</h1><hr>
+<hr>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;打开hexo-theme-matery\layout\_partial中的footer.ejs，将本站总访问量和访客数的代码改为如下：</p>
+<pre><code>&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalTraffic) { %&gt;
+    &lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;
+    &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
+    本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt;
+
+&lt;% } %&gt;
+&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalNumberOfvisitors) { %&gt;
+    &lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;
+    次,&amp;nbsp;
+    &lt;i class=&quot;fa fa-users&quot;&gt;&lt;/i&gt;
+    访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt; 人
+&lt;% } %&gt;</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;变化就在下面两句，将后面的＜/span＞写在前面了</p>
+<pre><code>&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;
+&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;本人没学过前端的东西，格式上的小问题吧。和我好友找这个问题找了好久，省略一万字的过程…，终于解决了。</p>
+
             </div>
             <hr>
 
@@ -431,7 +378,7 @@ int main(int argc, const char *argv[]){
         </li>
         <li class="post-license-link">
             <strong>本文链接：</strong>
-            <a href="https://frankgbg.top/posts/33176/">主席树，静态区间k-th小数或k-th大数</a>
+            <a href="https://frankgbg.top/posts/3/">解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</a>
         </li>
         <li class="post-license-statement">
             <strong>版权声明： </strong>
@@ -440,6 +387,18 @@ int main(int argc, const char *argv[]){
     </ul>
  </div>
             
+
+            <!-- 广告 -->
+            <body>
+                <div align="center">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- 文章末尾 -->
+                    <ins class="adsbygoogle" style="display:inline-block;width:1150px;height:50px" data-ad-client="ca-pub-7839811035104726" data-ad-slot="6403142159"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":-10,"vOffset":-50},"mobile":{"show":"true#","scale":0.5},"react":{"opacityDefault":0.5,"opacityOnHover":0.2},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":-10,"vOffset":-50},"mobile":{"show":"true#","scale":0.5},"react":{"opacityDefault":0.5,"opacityOnHover":0.2},"log":false});</script></body>
 
             
             <style>
@@ -599,7 +558,7 @@ int main(int argc, const char *argv[]){
         repo: 'frankgbg.github.io',
         owner: 'frankgbg',
         admin: "frankgbg",
-        id: '2019-08-18T16-09-00',
+        id: '2019-06-03T16-56-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
     gitalk.render('gitalk-container');
@@ -623,19 +582,19 @@ int main(int argc, const char *argv[]){
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/10233/">
+                <a href="/posts/4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="LaTex数学符号极简速查">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="静态区间k-th小数或k-th大数(主席树)">
                         
-                        <span class="card-title">LaTex数学符号极简速查</span>
+                        <span class="card-title">静态区间k-th小数或k-th大数(主席树)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基本运算,集合符号,希腊字母,向量矩阵
+                            静态区间k-th小数或k-th大数
                         
                     </div>
                     <div class="publish-info">
@@ -646,8 +605,8 @@ int main(int argc, const char *argv[]){
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/数学符号/" class="post-category" target="_blank">
-                                    数学符号
+                            <a href="/categories/树/" class="post-category" target="_blank">
+                                    树
                                 </a>
                             
                             
@@ -657,8 +616,8 @@ int main(int argc, const char *argv[]){
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/符号/" target="_blank">
-                        <span class="chip bg-color">符号</span>
+                    <a href="/tags/主席树/" target="_blank">
+                        <span class="chip bg-color">主席树</span>
                     </a>
                     
                 </div>
@@ -672,31 +631,31 @@ int main(int argc, const char *argv[]){
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/58045/">
+                <a href="/posts/2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="第十届蓝桥杯B组C/C++国赛部分题解">
                         
-                        <span class="card-title">解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</span>
+                        <span class="card-title">第十届蓝桥杯B组C/C++国赛部分题解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题
+                            2019年第十届蓝桥杯B组C/C++国赛部分题解
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-03
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/hexo/" class="post-category" target="_blank">
-                                    hexo
+                            <a href="/categories/竞赛/" class="post-category" target="_blank">
+                                    竞赛
                                 </a>
                             
                             
@@ -706,8 +665,8 @@ int main(int argc, const char *argv[]){
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/" target="_blank">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/蓝桥杯/" target="_blank">
+                        <span class="chip bg-color">蓝桥杯</span>
                     </a>
                     
                 </div>
@@ -763,13 +722,6 @@ int main(int argc, const char *argv[]){
 </main>
 
 
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
-
 <head><meta name="generator" content="Hexo 3.8.0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -781,11 +733,12 @@ int main(int argc, const char *argv[]){
 <link rel="stylesheet" href="/css/prism-base16-ateliersulphurpool.light.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
+<!-- 广告 -->
 <body>
 <div align="center">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- 横幅广告 -->
-  <ins class="adsbygoogle" style="display:inline-block;width:900px;height:50px" data-ad-client="ca-pub-7839811035104726" data-ad-slot="4811585236"></ins>
+  <!-- 文章末尾 -->
+  <ins class="adsbygoogle" style="display:inline-block;width:1150px;height:50px" data-ad-client="ca-pub-7839811035104726" data-ad-slot="6403142159"></ins>
   <script>
        (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
@@ -801,7 +754,7 @@ int main(int argc, const char *argv[]){
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">4.8k</span>
+                <span class="white-color">6.1k</span>
             
 
             
