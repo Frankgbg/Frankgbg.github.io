@@ -4,10 +4,14 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题, G_bg">
-    <meta name="description" content="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题
+    <meta name="keywords" content="LaTex数学符号极简速查, G_bg">
+    <meta name="description" content="LaTex数学符号极简速查
+Markdown中使用时，”_”和”\&amp;quot;需要用”&amp;quot;转义，在它们前加一个”&amp;quot;
 
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;打开hexo-theme-matery\layout\_partial中的footer.ejs，将本站总访问量和">
+基本运算
+下标$a_{1}$a_{1}
+乘法$x\times y$x \times y
+乘方$2^{3x">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题 | G_bg</title>
+    <title>LaTex数学符号极简速查 | G_bg</title>
     <link rel="icon" type="image/png" href="/medias/ghost.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -265,13 +269,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题
+                        LaTex数学符号极简速查
                     </div>
                 </div>
             </div>
@@ -293,8 +297,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/" target="_blank">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/符号/" target="_blank">
+                                <span class="chip bg-color">符号</span>
                             </a>
                         
                     </div>
@@ -305,8 +309,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/hexo/" class="post-category" target="_blank">
-                                hexo
+                            <a href="/categories/数学符号/" class="post-category" target="_blank">
+                                数学符号
                             </a>
                         
                     </div>
@@ -317,14 +321,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-06-03
+                    2019-08-18
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        253
+                        366
                     </div>
                     
 
@@ -347,45 +351,62 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题"><a href="#hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题" class="headerlink" title="hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题"></a>hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</h1><hr>
+                <h1 id="LaTex数学符号极简速查"><a href="#LaTex数学符号极简速查" class="headerlink" title="LaTex数学符号极简速查"></a>LaTex数学符号极简速查</h1><hr>
+<p>Markdown中使用时，”_”和”\&quot;需要用”&quot;转义，在它们前加一个”&quot;</p>
 <hr>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;打开hexo-theme-matery\layout\_partial中的footer.ejs，将本站总访问量和访客数的代码改为如下：</p>
-<pre><code>&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalTraffic) { %&gt;
-    &lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;
-    &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
-    本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt;
-
-&lt;% } %&gt;
-&lt;% if (theme.busuanziStatistics &amp;&amp; theme.busuanziStatistics.totalNumberOfvisitors) { %&gt;
-    &lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;
-    次,&amp;nbsp;
-    &lt;i class=&quot;fa fa-users&quot;&gt;&lt;/i&gt;
-    访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot; class=&quot;white-color&quot;&gt;&lt;/span&gt; 人
-&lt;% } %&gt;</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;变化就在下面两句，将后面的＜/span＞写在前面了</p>
-<pre><code>&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;&lt;/span&gt;
-&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;&lt;/span&gt;</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;本人没学过前端的东西，格式上的小问题吧。和我好友找这个问题找了好久，省略一万字的过程…，终于解决了。</p>
+<h3 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h3><ol>
+<li>下标$a_{1}$<br>a_{1}</li>
+<li>乘法$x\times y$<br>x \times y</li>
+<li>乘方$2^{3x}$<br>2^{3x}</li>
+<li>下标乘方$a^{3}_{i}$<br>a^{3}_{i}</li>
+<li>平方根$\sqrt {x + y}$<br>\sqrt {x + y}</li>
+<li>多次开根$\sqrt[3]{x}$<br>\sqrt[3]{x}</li>
+<li>除法$x \div y$<br>x \div y</li>
+<li>分数$\frac{x}{y}$<br>\frac{x}{y}</li>
+<li>异或$\oplus$<br>\oplus</li>
+<li>小于等于$x \leq y$<br>x \leq y</li>
+<li>大于等于$x \geq y$<br>x \geq y</li>
+<li>不等于$x \neq y$<br>x \neq y</li>
+<li>向下取整$\lfloor x \rfloor$<br>\lfloor x \rfloor</li>
+<li>向上取整$\lceil x \rceil$<br>\lceil x \rceil</li>
+<li>上水平线$\overline{m+n}$<br>\overline{m+n}</li>
+<li>下水平线$\underline{m+n}$<br>\underline{m+n}</li>
+<li>上大括号$\overbrace{a+b+\cdots+z}^{n}$<br>\overbrace{a+b+\cdots+z}^{n}</li>
+<li>下大括号$\underbrace{a+b+\cdots+z}_{n}$<br>\underbrace{a+b+\cdots+z}_{n}</li>
+<li>求和$\sum\limits_{x = 1}^{n} 7x$<br>\sum\limits_{x = 1}^{n} 7x</li>
+<li>积分$\int_{0}^{\frac{\pi}{2}} \sin(x)$<br>\int_{0}^{\frac{\pi}{2}} \sin(x)</li>
+<li>求积$\prod\limits_{x = 1}^{n}x$<br>\prod\limits_{x = 1}^{n}x</li>
+</ol>
+<h3 id="集合符号"><a href="#集合符号" class="headerlink" title="集合符号"></a>集合符号</h3><ol>
+<li>属于$A \in B$<br>A \in B</li>
+<li>不属于$A \notin B$<br>A \notin B</li>
+<li>子集$A \subset B$<br>A \subset B</li>
+<li>真子集$A \subseteq B$<br>A \subseteq B</li>
+<li>无穷大$\propto$<br>\propto</li>
+</ol>
+<h3 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h3><p>大写首字母大写</p>
+<ol>
+<li>$\alpha$ \alpha</li>
+<li>$\beta$ \beta</li>
+<li>$\gamma$ \gamma</li>
+<li>$\theta$ \theta</li>
+<li>$\lambda$ \lambda</li>
+<li>$\phi$ \phi</li>
+<li>$\omega$ \omega</li>
+<li>$\mu$ \mu</li>
+<li>$\rho$ \rho</li>
+<li>$\pi$ \pi</li>
+</ol>
+<h3 id="向量矩阵"><a href="#向量矩阵" class="headerlink" title="向量矩阵"></a>向量矩阵</h3><ol>
+<li>向量$\vec{v}$<br>\vec{v}</li>
+<li>矩阵<br>$<br>\begin{pmatrix}<br>a_n\<br>1<br>\end{pmatrix}<br>=<br>\begin{pmatrix}<br>A&amp;B\<br>0&amp;1<br>\end{pmatrix}<br>\times<br>\begin{pmatrix}<br>a_{n-1}\<br>1<br>\end{pmatrix}<br>$</li>
+</ol>
+<p><img src="http://m.qpic.cn/psb?/V11e9Og61Cuz1K/zphTE2NfHmaqk1t8NDx.2EROT6Y4xYIuuR5Dy3YHobc!/b/dFIBAAAAAAAA&bo=twCVAbcAlQEDCSw!&rf=viewer_4" alt></p>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><img src="http://m.qpic.cn/psb?/V11e9Og61Cuz1K/40MuntutTkJ3dXgqcO1yCLz2xTASjcQMDNzsQpoPtUo!/b/dEABAAAAAAAA&bo=SQJOA0kCTgMBCS4!&rf=viewer_4" alt><br><img src="http://m.qpic.cn/psb?/V11e9Og61Cuz1K/IkfT0MLAO.ML6W61zADdNp80CyeNvi9hg6817wsWNWI!/b/dLgAAAAAAAAA&bo=QAIvA0ACLwMBCS4!&rf=viewer_4" alt><br><img src="http://m.qpic.cn/psb?/V11e9Og61Cuz1K/oYaODgwg4bvcEjQiWgBxUSNxGgKRm1Paqiix.mWgqFY!/b/dDcBAAAAAAAA&bo=XwJbA18CWwMBGT4!&rf=viewer_4" alt><br><img src="http://m.qpic.cn/psb?/V11e9Og61Cuz1K/7SLi0WQAZybYE1T9Rv9aD47kCPVTZOFrfNIxpGUEfv0!/b/dL4AAAAAAAAA&bo=QwImA0MCJgMBGT4!&rf=viewer_4" alt><br><img src="http://m.qpic.cn/psb?/V11e9Og61Cuz1K/CqjADdms3scnsaGtwOeQMF4p0YYQkWcg.XHLcaL6mLY!/b/dFQBAAAAAAAA&bo=eAI7A3gCOwMBGT4!&rf=viewer_4" alt></p>
 
             </div>
             <hr>
 
-            
-                <div>
-    <br>
-    <ul id="post-license" class="post-license">
-        <li class="post-license-author">
-            <strong>本文作者：</strong>
-            <a href="https://frankgbg.top">G_bg</a>
-        </li>
-        <li class="post-license-link">
-            <strong>本文链接：</strong>
-            <a href="https://frankgbg.top/posts/3/">解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</a>
-        </li>
-        <li class="post-license-statement">
-            <strong>版权声明： </strong>
-            本文由 G_bg 原创，采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="license" target="_blank">署名-非商业性使用-相同方式共享（CC BY-NC-SA）4.0 国际许可协议</a> <br>转载请保留以上声明信息！
-        </li>
-    </ul>
- </div>
             
 
             <br><br>
@@ -559,7 +580,7 @@
         repo: 'frankgbg.github.io',
         owner: 'frankgbg',
         admin: "frankgbg",
-        id: '2019-06-03T16-56-00',
+        id: '2019-08-18T17-30-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
     gitalk.render('gitalk-container');
@@ -583,24 +604,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/4/">
+                <a href="/posts/10006/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="静态区间k-th小数或k-th大数(主席树)">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="动态区间k-th小数或k-th大数(主席树和树状数组)">
                         
-                        <span class="card-title">静态区间k-th小数或k-th大数(主席树)</span>
+                        <span class="card-title">动态区间k-th小数或k-th大数(主席树和树状数组)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            静态区间k-th小数或k-th大数
+                            动态区间k-th小数或k-th大数
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-18
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-20
                         </span>
                         <span class="publish-author">
                             
@@ -632,31 +653,31 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/2/">
+                <a href="/posts/10004/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="第十届蓝桥杯B组C/C++国赛部分题解">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="静态区间k-th小数或k-th大数(主席树)">
                         
-                        <span class="card-title">第十届蓝桥杯B组C/C++国赛部分题解</span>
+                        <span class="card-title">静态区间k-th小数或k-th大数(主席树)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2019年第十届蓝桥杯B组C/C++国赛部分题解
+                            静态区间k-th小数或k-th大数
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-30
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/竞赛/" class="post-category" target="_blank">
-                                    竞赛
+                            <a href="/categories/树/" class="post-category" target="_blank">
+                                    树
                                 </a>
                             
                             
@@ -666,8 +687,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/蓝桥杯/" target="_blank">
-                        <span class="chip bg-color">蓝桥杯</span>
+                    <a href="/tags/主席树/" target="_blank">
+                        <span class="chip bg-color">主席树</span>
                     </a>
                     
                 </div>
@@ -723,6 +744,13 @@
 </main>
 
 
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
 <head><meta name="generator" content="Hexo 3.8.0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -737,12 +765,12 @@
 <!-- 广告 -->
 <body>
 <div align="center">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- 文章末尾 -->
-  <ins class="adsbygoogle" style="display:inline-block;width:1100px;height:50px" data-ad-client="ca-pub-7839811035104726" data-ad-slot="4811585236"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- 页脚前 -->
+	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7839811035104726" data-ad-slot="4811585236" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 </div>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":-10,"vOffset":-50},"mobile":{"show":"true#","scale":0.5},"react":{"opacityDefault":0.5,"opacityOnHover":0.2},"log":false});</script></body>
 

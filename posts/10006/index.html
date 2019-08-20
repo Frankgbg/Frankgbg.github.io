@@ -4,11 +4,21 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="第十届蓝桥杯B组C/C++国赛部分题解, G_bg">
-    <meta name="description" content="2019年第十届蓝桥杯B组C/C++国赛部分题解
-怎么说，这个国赛给我整自闭了。五个填空，五个大题，我就写五个填空加第一个大题吧。后面的一言难尽。
+    <meta name="keywords" content="动态区间k-th小数或k-th大数(主席树和树状数组), G_bg">
+    <meta name="description" content="动态区间k-th小数或k-th大数(主席树和树状数组)
+ZOJ 2112
+主席树和树状数组不知道主席树的可以去看下我的另一篇文章静态区间k-th小数或k-th大数(主席树)
 
-A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数列">
+相同
+
+
+建原序列主席树与静态区间主席树一样；
+
+
+不同
+
+
+所">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +26,7 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>第十届蓝桥杯B组C/C++国赛部分题解 | G_bg</title>
+    <title>动态区间k-th小数或k-th大数(主席树和树状数组) | G_bg</title>
     <link rel="icon" type="image/png" href="/medias/ghost.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -266,13 +276,13 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        第十届蓝桥杯B组C/C++国赛部分题解
+                        动态区间k-th小数或k-th大数(主席树和树状数组)
                     </div>
                 </div>
             </div>
@@ -282,99 +292,10 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 100px;
-    }
-
-    .toc-widget {
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        margin: 35px 0 15px 0;
-        padding-left: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 20px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -383,8 +304,8 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/蓝桥杯/" target="_blank">
-                                <span class="chip bg-color">蓝桥杯</span>
+                            <a href="/tags/主席树/" target="_blank">
+                                <span class="chip bg-color">主席树</span>
                             </a>
                         
                     </div>
@@ -395,8 +316,8 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/竞赛/" class="post-category" target="_blank">
-                                竞赛
+                            <a href="/categories/树/" class="post-category" target="_blank">
+                                树
                             </a>
                         
                     </div>
@@ -407,21 +328,21 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-05-30
+                    2019-08-20
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.1k
+                        1.3k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        5 分
+                        6 分
                     </div>
                     
                 
@@ -437,148 +358,133 @@ A.题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2019年第十届蓝桥杯B组C-C-国赛部分题解"><a href="#2019年第十届蓝桥杯B组C-C-国赛部分题解" class="headerlink" title="2019年第十届蓝桥杯B组C/C++国赛部分题解"></a>2019年第十届蓝桥杯B组C/C++国赛部分题解</h1><hr>
-<p>怎么说，这个国赛给我整自闭了。五个填空，五个大题，我就写五个填空加第一个大题吧。后面的一言难尽。</p>
-<hr>
-<h3 id="A"><a href="#A" class="headerlink" title="A."></a>A.</h3><p>题意：$2019^2$  $x^2$  $y^2$，找出最小的x+y使得前式为等差数列,（2019＜x＜y）；</p>
-<p>思路：暴力<br>答案：7020</p>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
+                <h1 id="动态区间k-th小数或k-th大数-主席树和树状数组"><a href="#动态区间k-th小数或k-th大数-主席树和树状数组" class="headerlink" title="动态区间k-th小数或k-th大数(主席树和树状数组)"></a>动态区间k-th小数或k-th大数(主席树和树状数组)</h1><hr>
+<h3 id="ZOJ-2112"><a href="#ZOJ-2112" class="headerlink" title="ZOJ 2112"></a><a href="http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=2112" target="_blank" rel="noopener">ZOJ 2112</a></h3><hr>
+<h3 id="主席树和树状数组"><a href="#主席树和树状数组" class="headerlink" title="主席树和树状数组"></a>主席树和树状数组</h3><p>不知道主席树的可以去看下我的另一篇文章<a href="https://www.frankgbg.top/posts/10004/" target="_blank" rel="noopener">静态区间k-th小数或k-th大数(主席树)</a></p>
+<ul>
+<li>相同</li>
+</ul>
+<ol>
+<li>建原序列主席树与静态区间主席树一样；</li>
+</ol>
+<ul>
+<li>不同</li>
+</ul>
+<ol>
+<li>所修改的值也包括在原序列，一起li’san’hua</li>
+<li>在修改值与查找上增加了树状数组</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;BIT是树状数组，计Find(x)表示x在离散化后数组中的下标<br>&nbsp;&nbsp;&nbsp;&nbsp;树状数组可以O(logn)计算“前缀和”，在查询静态[l,r]区间的k-th小值时是用[1,r]和[1,l-1]两棵树相减；所以在动态区间中只要用树状数组维护修改的信息，在询问时，除了上面两棵树外，在树状数组上多查询[1,l-1]和[1,r]修改了多少就可以了。<br>&nbsp;&nbsp;&nbsp;&nbsp;在修改a[p]值时，将树状数组从p位置开始，每个BIT都在原来的基础上新建一个Find(a[p])对应的分支，该分支的sum-1；接着在修改后的BIT基础上再新建一个Find(z)对应的分支，该分支的sum+1；修改a[p]=z。<br>&nbsp;&nbsp;&nbsp;&nbsp;在查询时，将原序列第r和第l-1两棵树和修改的树状数组对应的大约log(l-1)+log(r)棵树作计算就得出[l,r]区间修改后的k-th小数。</p>
+<pre><code>#include&lt;bits/stdc++.h&gt;
 using namespace std;
+typedef long long LL;
+const int maxn = 1e5+10;
+struct Node{
+    int l,r,sum;
+}T[maxn*40];
+int rt[maxn*40],tot;//rt静态主席树,tot所用节点数
+int a[maxn],b[maxn],siz;//b是离散化后数组,siz是离散化后个数
+int BIT[maxn];        //树状数组
+struct command{//存询问和修改的结构体
+    char op;
+    int L,R,K;
+}com[10010];
+void build(int &amp;p,int l,int r){//建第0棵树
+    p = ++tot;
+    T[p].sum = 0;
+    if(l == r) return;
+    int mid = (l+r)&gt;&gt;1;
+    build(T[p].l,l,mid);
+    build(T[p].r,mid+1,r);
+}
+void update(int &amp;p,int pre,int l,int r,int k,int v){
+    p = ++tot;//新节点
+    T[p] = T[pre];//共用节点，在下一递归中更新l或r其中一个
+    T[p].sum += v;//沿途走下去的分支(要更新的点)中都要比上一个版本多或少1
+    if(l == r) return;
+    int mid = (l+r)&gt;&gt;1;
+    if(k &lt;= mid) update(T[p].l,T[pre].l,l,mid,k,v);//在小的一边
+    else update(T[p].r,T[pre].r,mid+1,r,k,v);//在大的一边
+}
+void modify(int x,int k,int v){//维护树状数组，更新修改的相关位置
+    for(;x &lt; maxn;x += (x&amp;-x))
+        update(BIT[x],BIT[x],1,siz,k,v);//在原来的版本上进行修改 
+}
+inline int Find(int x){//找离散化后的下标
+    return lower_bound(b+1,b+siz+1,x)-b;
+}
+void C(int p,int z){//修改值
+    modify(p,Find(a[p]),-1);//a[p]所在分支-1，去掉a[p]
+    modify(p,Find(z),1);//z所在分支+1，加上z
+    a[p] = z;//更新值
+}
+int buf1[20],buf2[20],buf1_cnt,buf2_cnt;
+int query(int l,int r,int k){
+    if(l == r) return l;
+    int t = 0;
+    for(int i = 0;i &lt; buf2_cnt;++i)//加上[1,R]区间左边的数量
+        t += T[T[buf2[i]].l].sum;
+    for(int i = 0;i &lt; buf1_cnt;++i)//减去[1,L-1]区间左边的数量
+        t -= T[T[buf1[i]].l].sum;
+    for(int i = 0;i &lt; buf1_cnt;++i)//沿分支往线段树下走
+        buf1[i] = (k &lt;= t?T[buf1[i]].l:T[buf1[i]].r);
+    for(int i = 0;i &lt; buf2_cnt;++i)//沿分支往线段树下走
+        buf2[i] = (k &lt;= t?T[buf2[i]].l:T[buf2[i]].r);
+    int mid = (l+r)&gt;&gt;1;
+    if(k &lt;= t) return query(l,mid,k);//k-th小在小的一边
+    else return query(mid+1,r,k-t);//k-th小在大的一边，继续找(k-t)-th小
+}
+void Q(int L,int R,int K){//查找K-th小
+    buf1_cnt = 0;
+    buf1[buf1_cnt++] = rt[L-1];//原序列树
+    for(int i = L-1;i &gt; 0;i-=(i&amp;-i))
+        buf1[buf1_cnt++] = BIT[i];//修改后树
+    buf2_cnt=0;
+    buf2[buf2_cnt++] = rt[R];//原序列树
+    for(int i = R;i &gt; 0;i-=(i&amp;-i))
+        buf2[buf2_cnt++] = BIT[i];//修改后树
+    int qq = query(1,siz,K);
+    printf(&quot;%d\n&quot;,b[qq]);
+}
 int main() {
-    int x = 2019*2019;
-    for(int i = 2020;i &lt; 8000;i++){
-        for(int j = i+1;j &lt; 8000;j++){
-            int a = i*i;
-            int b = j*j;
-            if(a-x == b-a) cout &lt;&lt; i+j &lt;&lt; endl;
-        }
-    }
-    return 0;
-}</code></pre><h3 id="B"><a href="#B" class="headerlink" title="B."></a>B.</h3><p>题意：将2019拆成两个素数和（应该是两个吧，有人说任意个，忘了）,有几种方式，交换两个加数算一种，如2+2017 = 2019，2017+2 = 2019算一种</p>
-<p>思路：暴力，我当两个做的<br>答案：1</p>
-<h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
-using namespace std;
-int p[2020],prime[2020],pri;
-int main() {
-    for(int i = 2;i &lt;= 2019;i++){
-        bool flag = 0;
-        for(int j = 2;j &lt;= (int)sqrt(i);j++){
-            if(i%j == 0){
-                flag = 1;
-                break;
+    int t;scanf(&quot;%d&quot;,&amp;t);
+    while(t--){
+        int n,q;
+        scanf(&quot;%d%d&quot;,&amp;n,&amp;q);
+        for(int i = 1;i &lt;= n;++i){
+            cin &gt;&gt; a[i];
+            b[i] = a[i];
+        } 
+        siz = n;
+        char ch[2];
+        for(int i = 1;i &lt;= q;++i){
+            scanf(&quot;%s&quot;,ch);
+            if(ch[0] == &#39;Q&#39;){
+                scanf(&quot;%d%d%d&quot;,&amp;com[i].L,&amp;com[i].R,&amp;com[i].K);
+                com[i].op = &#39;Q&#39;;
+            }
+            else{
+                scanf(&quot;%d%d&quot;,&amp;com[i].L,&amp;com[i].R);
+                com[i].op = &#39;C&#39;;
+                b[++siz] = com[i].R;//R是修改后的值
             }
         }
-        if(!flag) p[i] = 1,prime[++pri] = i;
+        sort(b+1,b+siz+1);
+        siz = unique(b+1,b+siz+1)-b-1;//去重后离散化
+        tot = 0;
+        build(rt[0],1,siz);//建第0棵树
+        for(int i = 1;i &lt;= n;++i){
+            int f = Find(a[i]);//找离散化后的下标
+            update(rt[i],rt[i-1],1,siz,f,1);//建原序列1-n棵树
+        } 
+        for(int i = 1;i &lt;= n;++i) //初始化树状数组,最初没有修改信息 
+            BIT[i] = rt[0];
+        for(int i = 1;i &lt;= q;++i)
+            com[i].op == &#39;Q&#39;?Q(com[i].L,com[i].R,com[i].K):C(com[i].L,com[i].R);
     }
-    int sum = 0;
-    for(int i = 1;i &lt;= pri;i++){
-        int x = 2019-prime[i];
-        if(p[x]) sum++;
-    }
-    cout &lt;&lt; sum / 2 &lt;&lt; endl;
+    system(&quot;pause&quot;);
     return 0;
-}</code></pre><h3 id="C"><a href="#C" class="headerlink" title="C."></a>C.</h3><p>题意：约数有x个的最小整数y，记$Sx$ = y，如$S1$ = 1，$S2$ = 2，$S3$ = 4，求$S100$</p>
-<p>思路：暴力<br>答案：45360</p>
-<h4 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
-using namespace std;
-const int maxn = 1e5+10;
-int f[maxn];
-int yue(int x){
-    int sum = 0;
-    for(int i = 1;i &lt;= (int)sqrt(x);i++){
-        if(x%i == 0) {
-            sum++;
-            if(x/i != i) sum++;
-        }
-    }
-    return sum;
-}
-int main() {
-    for(int i = 1;i &lt; 100000;i++){
-        int y = yue(i);
-        if(f[y]) continue;
-        f[y] = i;
-    }
-    cout &lt;&lt; f[100] &lt;&lt; endl;
-    return 0;
-}</code></pre><h3 id="D"><a href="#D" class="headerlink" title="D."></a>D.</h3><p>题意：将一个7*7的方格沿着边剪开后，旋转右边那块拼在左边那块的不规则处，要求拼成的还是一个矩形，求有多少种裁剪方法</p>
-<p>思路：沿着副对角线上三角和下三角对称。显而易见，剪得边只能向下或向右，统计到副对角线一共有多少种方法<br>答案：127</p>
-<h4 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
-using namespace std;
-const int maxn = 1e5+10;
-int dp[8][8];
-int main() {
-    for(int i = 1;i &lt;= 7;i++) dp[i][0] = 1;
-    int sum = 0;
-    for(int i = 1;i &lt;= 7;i++){
-        for(int j = 1;j &lt;= 8-i;j++){
-            dp[i][j] += dp[i-1][j];
-            dp[i][j] += dp[i][j-1];
-        }
-        sum += dp[i][8-i];
-    }
-    cout &lt;&lt; sum &lt;&lt; endl;
-    return 0;
-}</code></pre><h3 id="E"><a href="#E" class="headerlink" title="E."></a>E.</h3><p>题意：在一个5*5的方格中，起点是（1，1）沿着线走，计算不超过12步走回（1，1）的方法</p>
-<p>思路：深搜，将5×5的方格看成6×6，原来在点上就变成了在格子上<br>答案：208</p>
-<h4 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
-using namespace std;
-const int maxn = 1e5+10;
-const int dx[4] = {0,0,-1,1};
-const int dy[4] = {-1,1,0,0};
-int m[7][7],sum;
-bool valid(int x,int y){
-    if(x &lt; 1 || x &gt; 6 || y &lt; 1 || y &gt; 6) return false;
-    return true;
-}
-void dfs(int x,int y,int step){
-    if(step &gt; 12) return ;
-    if(step != 0 &amp;&amp; step &lt;= 12){
-        if(x == 1 &amp;&amp; y == 1){
-            sum++;
-            return ;
-        }
-    }
-    for(int i = 0;i &lt; 4;i++){
-        int next_x = x+dx[i];
-        int next_y = y+dy[i];
-        if(!valid(next_x,next_y) || m[next_x][next_y]) continue;
-        m[next_x][next_y] = 1;
-        dfs(next_x,next_y,step+1);
-        m[next_x][next_y] = 0;
-    }
-}
-int main() {
-    dfs(1,1,0);
-    cout &lt;&lt; sum &lt;&lt; endl;
-    return 0;
-}</code></pre><h3 id="F"><a href="#F" class="headerlink" title="F."></a>F.</h3><p>题意：给你两个字符串S和T，|S| ≥ |T|，求最少改变S中多少个字符使得在去掉一些不需要的字符后S = T</p>
-<p>数据范围最大是（|S|，|T| ≤ 1000）</p>
-<p>思路：最长公共子序列，由于是去掉一些不需要的数，所以当从T中第i位找是否和S中有相同时，得从S的第i位开始，前面不能匹配。同理后面也需要一个界限。局部的最长公共子序列</p>
-<h4 id="代码-5"><a href="#代码-5" class="headerlink" title="代码"></a>代码</h4><pre><code>#include&lt;bits/stdc++.h&gt;
-using namespace std;
-const int maxn = 1e3+10;
-char s[maxn],t[maxn];
-int dp[maxn][maxn];
-int main() {
-    int tt;cin &gt;&gt; tt;
-    while(tt--){
-        cin &gt;&gt; s+1 &gt;&gt; t+1;
-        int len_s = strlen(s+1);
-        int len_t = strlen(t+1);
-        int ma = 0;
-        for(int i = 1;i &lt;= len_t;i++){
-            for(int j = i;j &lt;= len_s-(len_t-i);j++){
-                if(t[i] == s[j]) dp[i][j] = dp[i-1][j-1]+1;
-                else dp[i][j] = max(dp[i-1][j],dp[i][j-1]);
-                ma = max(ma,dp[i][j]);
-            }
-        }
-        cout &lt;&lt; len_t-ma &lt;&lt; endl;
-    }
-    return 0;
-}</code></pre><p>以上题目不保证正确性<br>G和I，也就是第七和第九题，暴力只能过最水的数据，另外两题没写</p>
-
+}</code></pre>
             </div>
             <hr>
 
@@ -592,7 +498,7 @@ int main() {
         </li>
         <li class="post-license-link">
             <strong>本文链接：</strong>
-            <a href="https://frankgbg.top/posts/2/">第十届蓝桥杯B组C/C++国赛部分题解</a>
+            <a href="https://frankgbg.top/posts/10006/">动态区间k-th小数或k-th大数(主席树和树状数组)</a>
         </li>
         <li class="post-license-statement">
             <strong>版权声明： </strong>
@@ -613,7 +519,7 @@ int main() {
                          (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
                 </div>
-            <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":-10,"vOffset":-50},"mobile":{"show":"true#","scale":0.5},"react":{"opacityDefault":0.5,"opacityOnHover":0.2},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":-10,"vOffset":-50},"mobile":{"show":"true#","scale":0.5},"react":{"opacityDefault":0.5,"opacityOnHover":0.2},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":-10,"vOffset":-50},"mobile":{"show":"true#","scale":0.5},"react":{"opacityDefault":0.5,"opacityOnHover":0.2},"log":false});</script></body>
+            <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":-10,"vOffset":-50},"mobile":{"show":"true#","scale":0.5},"react":{"opacityDefault":0.5,"opacityOnHover":0.2},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":-10,"vOffset":-50},"mobile":{"show":"true#","scale":0.5},"react":{"opacityDefault":0.5,"opacityOnHover":0.2},"log":false});</script></body>
 
             
             <style>
@@ -773,7 +679,7 @@ int main() {
         repo: 'frankgbg.github.io',
         owner: 'frankgbg',
         admin: "frankgbg",
-        id: '2019-05-30T20-33-27',
+        id: '2019-08-20T16-14-41',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
     gitalk.render('gitalk-container');
@@ -795,44 +701,46 @@ int main() {
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/3/">
+                <a href="/posts/10006/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="动态区间k-th小数或k-th大数(主席树和树状数组)">
                         
-                        <span class="card-title">解决hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题</span>
+                        <span class="card-title">动态区间k-th小数或k-th大数(主席树和树状数组)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            hexo之hexo-theme-matery主题看板娘与底部访问人数冲突问题
+                            动态区间k-th小数或k-th大数
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-06-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/hexo/" class="post-category" target="_blank">
-                                    hexo
+                            <a href="/categories/树/" class="post-category" target="_blank">
+                                    树
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/" target="_blank">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/主席树/" target="_blank">
+                        <span class="chip bg-color">主席树</span>
                     </a>
                     
                 </div>
@@ -846,31 +754,31 @@ int main() {
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/1/">
+                <a href="/posts/10005/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="第十三届东北地区大学生程序设计竞赛前四题">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="LaTex数学符号极简速查">
                         
-                        <span class="card-title">第十三届东北地区大学生程序设计竞赛前四题</span>
+                        <span class="card-title">LaTex数学符号极简速查</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2019ccpc东北地区大学生程序设计竞赛（东北电力大学）前四题
+                            基本运算,集合符号,希腊字母,向量矩阵
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-30
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/竞赛/" class="post-category" target="_blank">
-                                    竞赛
+                            <a href="/categories/数学符号/" class="post-category" target="_blank">
+                                    数学符号
                                 </a>
                             
                             
@@ -880,12 +788,8 @@ int main() {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/ACM/" target="_blank">
-                        <span class="chip bg-color">ACM</span>
-                    </a>
-                    
-                    <a href="/tags/东北地区赛/" target="_blank">
-                        <span class="chip bg-color">东北地区赛</span>
+                    <a href="/tags/符号/" target="_blank">
+                        <span class="chip bg-color">符号</span>
                     </a>
                     
                 </div>
@@ -936,69 +840,10 @@ int main() {
 </script>
 
 
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget">
-            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            // headingsOffset: -205,
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-    });
-</script>
     
 
 </main>
 
-
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 <head><meta name="generator" content="Hexo 3.8.0">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -1014,12 +859,12 @@ int main() {
 <!-- 广告 -->
 <body>
 <div align="center">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- 文章末尾 -->
-  <ins class="adsbygoogle" style="display:inline-block;width:1100px;height:50px" data-ad-client="ca-pub-7839811035104726" data-ad-slot="4811585236"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- 页脚前 -->
+	<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7839811035104726" data-ad-slot="4811585236" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 </div>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"superSample":2,"width":200,"height":400,"position":"left","hOffset":-10,"vOffset":-50},"mobile":{"show":"true#","scale":0.5},"react":{"opacityDefault":0.5,"opacityOnHover":0.2},"log":false});</script></body>
 
