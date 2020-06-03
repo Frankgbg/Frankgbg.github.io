@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>PureChatServer,聊天软件服务器端</title>
+      <link href="/posts/10011/"/>
+      <url>/posts/10011/</url>
+      
+        <content type="html"><![CDATA[<br>&emsp;&emsp;自己瞎写的，比较简单粗陋的。<h4 id="代码：https-github-com-Frankgbg-PureChatServer"><a href="#代码：https-github-com-Frankgbg-PureChatServer" class="headerlink" title="代码：https://github.com/Frankgbg/PureChatServer"></a>代码：<a href="https://github.com/Frankgbg/PureChatServer" target="_blank" rel="noopener">https://github.com/Frankgbg/PureChatServer</a></h4><p>介绍：Qt Creator开发。所有服务请求采用TCPsocket，包括登陆验证。</p><br><h5 id="主要结构："><a href="#主要结构：" class="headerlink" title="主要结构："></a>主要结构：</h5><p>1、一个PureChatServer : QWidget视图界面：服务器的开启和关闭以及显示一些信息；<br>2、一个ServerSocket : QTcpServer，监听端口，接受一个新连接就创建一个ClientSocket : QTcpSocket  服务；<br>3、ClientSocket : QTcpSocket  与客户端的连接，服务；<br>4、DatabaseOperator  进行数据库操作。</p><p><img src="https://img-blog.csdnimg.cn/2020060403380643.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><br><h5 id="主要功能："><a href="#主要功能：" class="headerlink" title="主要功能："></a>主要功能：</h5><p>1、注册账号。<br>2、登陆验证。<br>3、查找、添加、删除好友及群，创建群聊。<br>4、修改个人信息，修改群昵称。<br>5、好友以及群内聊天。<br>ps：无头像功能，之后再慢慢完善吧。目前就这些主要简单功能。</p><br><h5 id="功能详细介绍："><a href="#功能详细介绍：" class="headerlink" title="功能详细介绍："></a>功能详细介绍：</h5><p>1、昵称和密码注册到账号，账号是按序注册的。<br>2、账号是否存在，密码是否正确，是否已登陆提示。<br>3、好友以及群都是双向添加、删除。无需同意(简单版)。昵称注册到群账号，账号按序注册。自由出入群聊，群内人人平等(无需考虑其他，实现简单。哈哈)。<br>4、修改个人昵称，签名，密码，可见信息未及时更新给好友；修改群昵称，群内成员皆可修改，及时更新给所有群内成员。<br>5、好友以及群内在线，离线聊天，无聊天记录功能。</p><br><h5 id="缺点及不足："><a href="#缺点及不足：" class="headerlink" title="缺点及不足："></a>缺点及不足：</h5><p>1、数据库只用了个人账号，群号，好友关系，个人与群关系四张表。未考虑数据量大的情况，如数据库记录多，影响查表性能。<br>解决方法：可以用树型结构文件夹形式分开保存，检索；或者hash映射到不同文件，降低一次查表时间。<br>2、群内成员在每次打开群聊或者接收离线消息时都会传送一遍，重复。<br>解决方法：在客户端保存群聊成员基本信息，有变动及时更新。<br>3、还有一些类似上一点的功能性问题，我是方便着来的。<br>4、当然肯定还有很多写法或者设计上存在问题。勿喷。<br>5、整个项目都是用了简单的方法，比如离线消息是存在了id.txt文本里的等。</p><br><p><strong>ServerSocket和ClientSocket结构是参考的。忘了留网址了，有机会再看到一定补上，抱歉抱歉</strong>。</p><p>除了此结构，内容均本人所写。这两天有空再写客户端博客以及上传代码，还是等写客户端博客再一并传代码吧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 聊天软件开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 服务器端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>设置Qt::Tool窗体类型时，关闭在其中显示的最后窗口自动析构此窗口问题</title>
+      <link href="/posts/10010/"/>
+      <url>/posts/10010/</url>
+      
+        <content type="html"><![CDATA[<br><h6 id="emsp-emsp-问题描述：在一个QWidget窗口类中设置其为工具窗口-Qt-Tool-。在它之中显示其他窗口，当关闭这些窗口的最后一个时，会自动析构此窗口。"><a href="#emsp-emsp-问题描述：在一个QWidget窗口类中设置其为工具窗口-Qt-Tool-。在它之中显示其他窗口，当关闭这些窗口的最后一个时，会自动析构此窗口。" class="headerlink" title="&emsp;&emsp;问题描述：在一个QWidget窗口类中设置其为工具窗口(Qt::Tool)。在它之中显示其他窗口，当关闭这些窗口的最后一个时，会自动析构此窗口。"></a>&emsp;&emsp;问题描述：在一个QWidget窗口类中设置其为工具窗口(Qt::Tool)。在它之中显示其他窗口，当关闭这些窗口的最后一个时，会自动析构此窗口。</h6><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"test.h"</span></span>test<span class="token operator">::</span><span class="token function">test</span><span class="token punctuation">(</span>QWidget <span class="token operator">*</span>parent<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">QWidget</span><span class="token punctuation">(</span>parent<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token function">setWindowFlags</span><span class="token punctuation">(</span>Qt<span class="token operator">::</span>Tool<span class="token punctuation">)</span><span class="token punctuation">;</span>    QPixmap <span class="token function">image</span><span class="token punctuation">(</span><span class="token string">":/headportrait/head.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    ChatFriend <span class="token operator">*</span>chat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">ChatFriend</span><span class="token punctuation">(</span><span class="token number">123456</span><span class="token punctuation">,</span>image<span class="token punctuation">,</span><span class="token string">"nnn"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    chat<span class="token operator">-</span><span class="token operator">></span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>&emsp;&emsp;ChatFriend 是我写的一个继承QWidget的类。在关闭ChatFriend时是调用close()。上面代码执行后，关闭chat窗口，test窗口直接析构了。这个问题出现好久了，当时没定位到这，还以为是多线程引起的访问野指针导致程序崩了，仔细看了n多遍代码未果。终于在今天夜里定位到此问题，也终于得到解决。<p>解决方法：<strong>将ChatFriend类设置窗口类型加一个Qt::CoverWindow。</strong></p><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"test.h"</span></span>test<span class="token operator">::</span><span class="token function">test</span><span class="token punctuation">(</span>QWidget <span class="token operator">*</span>parent<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">QWidget</span><span class="token punctuation">(</span>parent<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token function">setWindowFlags</span><span class="token punctuation">(</span>Qt<span class="token operator">::</span>Tool<span class="token punctuation">)</span><span class="token punctuation">;</span>    QPixmap <span class="token function">image</span><span class="token punctuation">(</span><span class="token string">":/headportrait/head.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    ChatFriend <span class="token operator">*</span>chat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">ChatFriend</span><span class="token punctuation">(</span><span class="token number">123456</span><span class="token punctuation">,</span>image<span class="token punctuation">,</span><span class="token string">"nnn"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    chat<span class="token operator">-</span><span class="token operator">></span><span class="token function">setWindowFlag</span><span class="token punctuation">(</span>Qt<span class="token operator">::</span>CoverWindow<span class="token punctuation">)</span><span class="token punctuation">;</span>    chat<span class="token operator">-</span><span class="token operator">></span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br><p><strong>Qt::CoverWindow文档描述：Indicates that the window represents a cover window, which is shown when the application is minimized on some platforms.</strong></p><p>可能是将chat认为是最后一个主窗口了，所以close后直接析构了test。封面窗口可能不算是一个主窗口了。<strong>有大佬知晓其缘由赐教一下。</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 聊天软件开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> QT </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>阿里云云服务器ECS简单使用</title>
       <link href="/posts/10009/"/>
       <url>/posts/10009/</url>
@@ -45,9 +97,9 @@
       
         <tags>
             
-            <tag> SQL Server </tag>
-            
             <tag> QT </tag>
+            
+            <tag> SQL Server </tag>
             
         </tags>
       

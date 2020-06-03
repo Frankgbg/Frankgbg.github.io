@@ -4,9 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="QT访问SQL Server, G_bg">
-    <meta name="description" content="QT访问SQL Server参考：https://blog.csdn.net/YJin_Woo/article/details/78821924&amp;emsp;&amp;emsp;基本就是和参考网站相同，只是记录一下。如侵权请联系删除，谢谢。
-一、SQ">
+    <meta name="keywords" content="设置Qt::Tool窗体类型时，关闭在其中显示的最后窗口自动析构此窗口问题, G_bg">
+    <meta name="description" content="
+
+&amp;emsp;&amp;emsp;问题描述：在一个QWidget窗口类中设置其为工具窗口(Qt::Tool)。在它之中显示其他窗口，当关闭这些窗口的最后一个时，会自动析构此窗口。#include &#34;test.h&#34;
+
+test::test(QWid">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>QT访问SQL Server | G_bg</title>
+    <title>设置Qt::Tool窗体类型时，关闭在其中显示的最后窗口自动析构此窗口问题 | G_bg</title>
     <link rel="icon" type="image/png" href="/medias/ghost.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -264,13 +267,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        QT访问SQL Server
+                        设置Qt::Tool窗体类型时，关闭在其中显示的最后窗口自动析构此窗口问题
                     </div>
                 </div>
             </div>
@@ -385,10 +388,6 @@
                                 <span class="chip bg-color">QT</span>
                             </a>
                         
-                            <a href="/tags/SQL-Server/" target="_blank">
-                                <span class="chip bg-color">SQL Server</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -409,21 +408,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-24
+                    2020-06-03
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        603
+                        315
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -439,48 +438,37 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="QT访问SQL-Server"><a href="#QT访问SQL-Server" class="headerlink" title="QT访问SQL Server"></a>QT访问SQL Server</h2><h5 id="参考：https-blog-csdn-net-YJin-Woo-article-details-78821924"><a href="#参考：https-blog-csdn-net-YJin-Woo-article-details-78821924" class="headerlink" title="参考：https://blog.csdn.net/YJin_Woo/article/details/78821924"></a>参考：<a href="https://blog.csdn.net/YJin_Woo/article/details/78821924" target="_blank" rel="noopener">https://blog.csdn.net/YJin_Woo/article/details/78821924</a></h5><h5 id="emsp-emsp-基本就是和参考网站相同，只是记录一下。如侵权请联系删除，谢谢。"><a href="#emsp-emsp-基本就是和参考网站相同，只是记录一下。如侵权请联系删除，谢谢。" class="headerlink" title="&emsp;&emsp;基本就是和参考网站相同，只是记录一下。如侵权请联系删除，谢谢。"></a>&emsp;&emsp;基本就是和参考网站相同，只是记录一下。如侵权请联系删除，谢谢。</h5><p><br><br></p>
-<h4 id="一、SQL-Server"><a href="#一、SQL-Server" class="headerlink" title="一、SQL Server"></a>一、SQL Server</h4><p>1.建立一个数据库PureChat，相信大家都会。<br>2.新建一个SQL Server用户。安全性-&gt;登录名，右击新建登录名。<br><img src="https://img-blog.csdnimg.cn/20200524173510823.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>3.常规中设置登录名及密码，不勾选“强制实施密码策略”。<br><img src="https://img-blog.csdnimg.cn/20200524173606188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>4.选择用户映射，勾选要使用的数据库PureChat，确定。我已经完成，所以用户中显示了。<br><img src="https://img-blog.csdnimg.cn/20200524173745523.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>5.接下来赋予用户一些增删查的权限。找到数据库-&gt;安全性-&gt;用户下的添加的用户，右击选择属性。<br><img src="https://img-blog.csdnimg.cn/20200524175909718.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>6.点击成员身份，勾选db_datareader，da_datawriter，db_ddladmin，db_owner，确定。<br><img src="https://img-blog.csdnimg.cn/2020052418021274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>7.打开SQL Server 配置管理器，选择SQL Server网络配置下的协议，上一篇博客中启用了TCP/IP服务，右击TCP/IP打开属性，IP地址，将最后一个IPAll的TCP端口设置为1433。<br><img src="https://img-blog.csdnimg.cn/20200524180509638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br></p>
-<h4 id="二、ODBC-开放数据库连接"><a href="#二、ODBC-开放数据库连接" class="headerlink" title="二、ODBC(开放数据库连接)"></a>二、ODBC(开放数据库连接)</h4><p>1.电脑桌面小娜搜索ODBC，或者控制面板-&gt;管理工具，找到ODBC打开。<br><br><br>2.点击添加，选择SQL Server。<br><img src="https://img-blog.csdnimg.cn/20200524182115180.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200524182226621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>3.设置名称，描述是对这个数据源的简单描述，服务器就是登录SQL Server时的名称。<br><img src="https://img-blog.csdnimg.cn/20200524220838925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>4.选择使用用户输入登录ID和密码的SQL Server验证，输入登录名和密码。<br><img src="https://img-blog.csdnimg.cn/20200524190455645.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>5.然后进行一些设置，最后完成时测试一下连接。我选择加密测试连接失败，不选则成功。<br><br><br></p>
-<h4 id="三、QT"><a href="#三、QT" class="headerlink" title="三、QT"></a>三、QT</h4><p>创建一个项目，需要在.pro文件中加上QT += sql，代码如下</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"purechatserver.h"</span></span>
+                <br>
 
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;QApplication></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;QSqlQuery></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;QSqlError></span></span>
+<h6 id="emsp-emsp-问题描述：在一个QWidget窗口类中设置其为工具窗口-Qt-Tool-。在它之中显示其他窗口，当关闭这些窗口的最后一个时，会自动析构此窗口。"><a href="#emsp-emsp-问题描述：在一个QWidget窗口类中设置其为工具窗口-Qt-Tool-。在它之中显示其他窗口，当关闭这些窗口的最后一个时，会自动析构此窗口。" class="headerlink" title="&emsp;&emsp;问题描述：在一个QWidget窗口类中设置其为工具窗口(Qt::Tool)。在它之中显示其他窗口，当关闭这些窗口的最后一个时，会自动析构此窗口。"></a>&emsp;&emsp;问题描述：在一个QWidget窗口类中设置其为工具窗口(Qt::Tool)。在它之中显示其他窗口，当关闭这些窗口的最后一个时，会自动析构此窗口。</h6><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"test.h"</span></span>
 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+test<span class="token operator">::</span><span class="token function">test</span><span class="token punctuation">(</span>QWidget <span class="token operator">*</span>parent<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">QWidget</span><span class="token punctuation">(</span>parent<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">//QApplication a(argc, argv);</span>
+    <span class="token function">setWindowFlags</span><span class="token punctuation">(</span>Qt<span class="token operator">::</span>Tool<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    QSqlDatabase db <span class="token operator">=</span> QSqlDatabase<span class="token operator">::</span><span class="token function">addDatabase</span><span class="token punctuation">(</span><span class="token string">"QODBC"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">//数据库驱动类型为SQL Server</span>
-    QString dsn <span class="token operator">=</span> QString<span class="token operator">::</span><span class="token function">fromLocal8Bit</span><span class="token punctuation">(</span><span class="token string">"PureChatDataSource"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//数据源名称</span>
-    db<span class="token punctuation">.</span><span class="token function">setHostName</span><span class="token punctuation">(</span><span class="token string">"localhost"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//选择本地主机，127.0.1.1</span>
-    db<span class="token punctuation">.</span><span class="token function">setDatabaseName</span><span class="token punctuation">(</span>dsn<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//设置数据源名称</span>
-    db<span class="token punctuation">.</span><span class="token function">setUserName</span><span class="token punctuation">(</span><span class="token string">"G_bg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//登录用户</span>
-    db<span class="token punctuation">.</span><span class="token function">setPassword</span><span class="token punctuation">(</span><span class="token string">"*******"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//密码</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>db<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">//打开数据库</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span><span class="token string">"打开失败"</span><span class="token operator">&lt;&lt;</span>db<span class="token punctuation">.</span><span class="token function">lastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">else</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span><span class="token string">"database open success!"</span><span class="token punctuation">;</span>
-        QSqlQuery <span class="token function">query</span><span class="token punctuation">(</span>db<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        query<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">"SELECT * FROM UserInformation"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>query<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>query<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLongLong</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span>query<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>\
-                   <span class="token operator">&lt;&lt;</span>query<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBool</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>query<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        db<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//PureChatServer w;</span>
-    <span class="token comment" spellcheck="true">//w.show();</span>
-    <span class="token keyword">return</span> a<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="https://img-blog.csdnimg.cn/2020052421511668.png#pic_center" alt="在这里插入图片描述"><br>&emsp;&emsp;当时我在创建数据源出现了连不上的一些问题，在前一篇SQL Servers身份验证中解决。</p>
+    QPixmap <span class="token function">image</span><span class="token punctuation">(</span><span class="token string">":/headportrait/head.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ChatFriend <span class="token operator">*</span>chat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">ChatFriend</span><span class="token punctuation">(</span><span class="token number">123456</span><span class="token punctuation">,</span>image<span class="token punctuation">,</span><span class="token string">"nnn"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    chat<span class="token operator">-</span><span class="token operator">></span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<br>
+&emsp;&emsp;ChatFriend 是我写的一个继承QWidget的类。在关闭ChatFriend时是调用close()。上面代码执行后，关闭chat窗口，test窗口直接析构了。这个问题出现好久了，当时没定位到这，还以为是多线程引起的访问野指针导致程序崩了，仔细看了n多遍代码未果。终于在今天夜里定位到此问题，也终于得到解决。
+
+<p>解决方法：<strong>将ChatFriend类设置窗口类型加一个Qt::CoverWindow。</strong></p>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"test.h"</span></span>
+
+test<span class="token operator">::</span><span class="token function">test</span><span class="token punctuation">(</span>QWidget <span class="token operator">*</span>parent<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">QWidget</span><span class="token punctuation">(</span>parent<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">setWindowFlags</span><span class="token punctuation">(</span>Qt<span class="token operator">::</span>Tool<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    QPixmap <span class="token function">image</span><span class="token punctuation">(</span><span class="token string">":/headportrait/head.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ChatFriend <span class="token operator">*</span>chat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">ChatFriend</span><span class="token punctuation">(</span><span class="token number">123456</span><span class="token punctuation">,</span>image<span class="token punctuation">,</span><span class="token string">"nnn"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    chat<span class="token operator">-</span><span class="token operator">></span><span class="token function">setWindowFlag</span><span class="token punctuation">(</span>Qt<span class="token operator">::</span>CoverWindow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    chat<span class="token operator">-</span><span class="token operator">></span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<br>
+
+<p><strong>Qt::CoverWindow文档描述：Indicates that the window represents a cover window, which is shown when the application is minimized on some platforms.</strong></p>
+<p>可能是将chat认为是最后一个主窗口了，所以close后直接析构了test。封面窗口可能不算是一个主窗口了。<strong>有大佬知晓其缘由赐教一下。</strong></p>
 
             </div>
             <hr>
@@ -495,7 +483,7 @@
         </li>
         <li class="post-license-link">
             <strong>本文链接：</strong>
-            <a href="https://frankgbg.top/posts/10008/">QT访问SQL Server</a>
+            <a href="https://frankgbg.top/posts/10010/">设置Qt::Tool窗体类型时，关闭在其中显示的最后窗口自动析构此窗口问题</a>
         </li>
         <li class="post-license-statement">
             <strong>版权声明： </strong>
@@ -676,7 +664,7 @@
         repo: 'frankgbg.github.io',
         owner: 'frankgbg',
         admin: "frankgbg",
-        id: '2020-05-24T21-58-20',
+        id: '2020-06-03T04-51-33',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
     gitalk.render('gitalk-container');
@@ -700,6 +688,59 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/posts/10011/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="PureChatServer,聊天软件服务器端">
+                        
+                        <span class="card-title">PureChatServer,聊天软件服务器端</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            聊天软件开发，我给它取名为PureChat
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-04
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/聊天软件开发/" class="post-category" target="_blank">
+                                    聊天软件开发
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/C/" target="_blank">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/服务器端/" target="_blank">
+                        <span class="chip bg-color">服务器端</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/posts/10009/">
                     <div class="card-image">
                         
@@ -716,9 +757,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -736,55 +777,6 @@
                     
                     <a href="/tags/云服务器/" target="_blank">
                         <span class="chip bg-color">云服务器</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/10007/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="SQL Server设置SQL Server身份验证">
-                        
-                        <span class="card-title">SQL Server设置SQL Server身份验证</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            聊天软件开发一
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-24
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/聊天软件开发/" class="post-category" target="_blank">
-                                    聊天软件开发
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/SQL-Server/" target="_blank">
-                        <span class="chip bg-color">SQL Server</span>
                     </a>
                     
                 </div>
