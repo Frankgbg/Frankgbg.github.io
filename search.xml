@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>PureChatClient,聊天软件客户端</title>
+      <link href="/posts/10012/"/>
+      <url>/posts/10012/</url>
+      
+        <content type="html"><![CDATA[<br><h4 id="代码：https-github-com-Frankgbg-PureChatClient"><a href="#代码：https-github-com-Frankgbg-PureChatClient" class="headerlink" title="代码：https://github.com/Frankgbg/PureChatClient"></a>代码：<a href="https://github.com/Frankgbg/PureChatClient" target="_blank" rel="noopener">https://github.com/Frankgbg/PureChatClient</a></h4><br><h5 id="主要结构："><a href="#主要结构：" class="headerlink" title="主要结构："></a>主要结构：</h5><p>1、MyWidget：列表中好友或群的资料显示<br>2、MyListWidget：好友或群列表基类<br>3、FriendList : MyListWidget：对好友列表的个性化设置<br>4、GroupList : MyListWidget：对群列表的个性化设置<br>5、OwnInformation：个人信息资料卡<br>6、Search：查找好友或群<br>7、CreateGroup：创建群聊<br>8、Information：好友及群资料卡<br>9、Emojs：聊天窗口中表情<br>10、ChatFriend：好友聊天窗口<br>11、ChatGroup群聊天窗口<br>12、Homepage：主页<br>13、Socket：与服务器和主页通信<br>14、SocketThread：保持tcp连接</p><p><img src="https://img-blog.csdnimg.cn/202006101520037.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p><br><h5 id="主要功能："><a href="#主要功能：" class="headerlink" title="主要功能："></a>主要功能：</h5><p>1、PureChatServer中提到的功能。<br>2、查看好友及群信息。<br>3、头像功能。</p><br><h5 id="功能详细介绍："><a href="#功能详细介绍：" class="headerlink" title="功能详细介绍："></a>功能详细介绍：</h5><p>1、略。<br>2、查看好友及群信息，群昵称，群头像可更改。</p><h5 id="缺点及不足："><a href="#缺点及不足：" class="headerlink" title="缺点及不足："></a>缺点及不足：</h5><p>貌似一身缺点。。</p><br><p>&emsp;&emsp;本来想用udp发送接收消息，还是没改。懒的改了。。还是暂时告一段落吧。总是熬夜，长期坐着不动。脖子疼。服务器端和客户端都有很多缺点，希望某些地方对你有帮助（虽然不太可能）。<br>&emsp;&emsp;溜了溜了。。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 聊天软件开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 客户端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PureChatServer,聊天软件服务器端</title>
       <link href="/posts/10011/"/>
       <url>/posts/10011/</url>
@@ -97,9 +124,9 @@
       
         <tags>
             
-            <tag> SQL Server </tag>
-            
             <tag> QT </tag>
+            
+            <tag> SQL Server </tag>
             
         </tags>
       

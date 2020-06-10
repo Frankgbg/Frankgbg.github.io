@@ -4,11 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="QT访问SQL Server, G_bg">
-    <meta name="description" content="QT访问SQL Server参考：https://blog.csdn.net/YJin_Woo/article/details/78821924
-&amp;emsp;&amp;emsp;基本就是和参考网站相同，只是记录一下。如侵权请联系删除，谢谢。
+    <meta name="keywords" content="PureChatClient,聊天软件客户端, G_bg">
+    <meta name="description" content="
 
-一、">
+代码：https://github.com/Frankgbg/PureChatClient
+
+主要结构：1、MyWidget：列表中好友或群的资料显示2、MyListWidget：好友或群列表基类3、FriendList : MyLis">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>QT访问SQL Server | G_bg</title>
+    <title>PureChatClient,聊天软件客户端 | G_bg</title>
     <link rel="icon" type="image/png" href="/medias/ghost.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -266,13 +267,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        QT访问SQL Server
+                        PureChatClient,聊天软件客户端
                     </div>
                 </div>
             </div>
@@ -282,99 +283,10 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 100px;
-    }
-
-    .toc-widget {
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        margin: 35px 0 15px 0;
-        padding-left: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 20px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -383,12 +295,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/QT/" target="_blank">
-                                <span class="chip bg-color">QT</span>
+                            <a href="/tags/C/" target="_blank">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
-                            <a href="/tags/SQL-Server/" target="_blank">
-                                <span class="chip bg-color">SQL Server</span>
+                            <a href="/tags/客户端/" target="_blank">
+                                <span class="chip bg-color">客户端</span>
                             </a>
                         
                     </div>
@@ -411,21 +323,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-24
+                    2020-06-10
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        603
+                        282
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -441,52 +353,22 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="QT访问SQL-Server"><a href="#QT访问SQL-Server" class="headerlink" title="QT访问SQL Server"></a>QT访问SQL Server</h2><p><strong>参考：<a href="https://blog.csdn.net/YJin_Woo/article/details/78821924" target="_blank" rel="noopener">https://blog.csdn.net/YJin_Woo/article/details/78821924</a></strong></p>
-<p><strong>&emsp;&emsp;基本就是和参考网站相同，只是记录一下。如侵权请联系删除，谢谢。</strong></p>
-<p><br><br></p>
-<h4 id="一、SQL-Server"><a href="#一、SQL-Server" class="headerlink" title="一、SQL Server"></a>一、SQL Server</h4><p>1.建立一个数据库PureChat，相信大家都会。<br>2.新建一个SQL Server用户。安全性-&gt;登录名，右击新建登录名。<br><img src="https://img-blog.csdnimg.cn/20200524173510823.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>3.常规中设置登录名及密码，不勾选“强制实施密码策略”。<br><img src="https://img-blog.csdnimg.cn/20200524173606188.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>4.选择用户映射，勾选要使用的数据库PureChat，确定。我已经完成，所以用户中显示了。<br><img src="https://img-blog.csdnimg.cn/20200524173745523.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>5.接下来赋予用户一些增删查的权限。找到数据库-&gt;安全性-&gt;用户下的添加的用户，右击选择属性。<br><img src="https://img-blog.csdnimg.cn/20200524175909718.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>6.点击成员身份，勾选db_datareader，da_datawriter，db_ddladmin，db_owner，确定。<br><img src="https://img-blog.csdnimg.cn/2020052418021274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>7.打开SQL Server 配置管理器，选择SQL Server网络配置下的协议，上一篇博客中启用了TCP/IP服务，右击TCP/IP打开属性，IP地址，将最后一个IPAll的TCP端口设置为1433。<br><img src="https://img-blog.csdnimg.cn/20200524180509638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p><br><br></p>
-<h4 id="二、ODBC-开放数据库连接"><a href="#二、ODBC-开放数据库连接" class="headerlink" title="二、ODBC(开放数据库连接)"></a>二、ODBC(开放数据库连接)</h4><p>1.电脑桌面小娜搜索ODBC，或者控制面板-&gt;管理工具，找到ODBC打开。<br><br><br>2.点击添加，选择SQL Server。<br><img src="https://img-blog.csdnimg.cn/20200524182115180.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200524182226621.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>3.设置名称，描述是对这个数据源的简单描述，服务器就是登录SQL Server时的名称。<br><img src="https://img-blog.csdnimg.cn/20200524220838925.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>4.选择使用用户输入登录ID和密码的SQL Server验证，输入登录名和密码。<br><img src="https://img-blog.csdnimg.cn/20200524190455645.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><br><br>5.然后进行一些设置，最后完成时测试一下连接。我选择加密测试连接失败，不选则成功。</p>
-<p><br><br></p>
-<h4 id="三、QT"><a href="#三、QT" class="headerlink" title="三、QT"></a>三、QT</h4><p>创建一个项目，需要在.pro文件中加上QT += sql，代码如下</p>
-<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"purechatserver.h"</span></span>
+                <br>
 
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;QApplication></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;QSqlQuery></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;QSqlError></span></span>
+<h4 id="代码：https-github-com-Frankgbg-PureChatClient"><a href="#代码：https-github-com-Frankgbg-PureChatClient" class="headerlink" title="代码：https://github.com/Frankgbg/PureChatClient"></a>代码：<a href="https://github.com/Frankgbg/PureChatClient" target="_blank" rel="noopener">https://github.com/Frankgbg/PureChatClient</a></h4><br>
 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">//QApplication a(argc, argv);</span>
+<h5 id="主要结构："><a href="#主要结构：" class="headerlink" title="主要结构："></a>主要结构：</h5><p>1、MyWidget：列表中好友或群的资料显示<br>2、MyListWidget：好友或群列表基类<br>3、FriendList : MyListWidget：对好友列表的个性化设置<br>4、GroupList : MyListWidget：对群列表的个性化设置<br>5、OwnInformation：个人信息资料卡<br>6、Search：查找好友或群<br>7、CreateGroup：创建群聊<br>8、Information：好友及群资料卡<br>9、Emojs：聊天窗口中表情<br>10、ChatFriend：好友聊天窗口<br>11、ChatGroup群聊天窗口<br>12、Homepage：主页<br>13、Socket：与服务器和主页通信<br>14、SocketThread：保持tcp连接</p>
+<p><img src="https://img-blog.csdnimg.cn/202006101520037.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk5MjE2OQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<br>
 
-    QSqlDatabase db <span class="token operator">=</span> QSqlDatabase<span class="token operator">::</span><span class="token function">addDatabase</span><span class="token punctuation">(</span><span class="token string">"QODBC"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">//数据库驱动类型为SQL Server</span>
-    QString dsn <span class="token operator">=</span> QString<span class="token operator">::</span><span class="token function">fromLocal8Bit</span><span class="token punctuation">(</span><span class="token string">"PureChatDataSource"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//数据源名称</span>
-    db<span class="token punctuation">.</span><span class="token function">setHostName</span><span class="token punctuation">(</span><span class="token string">"localhost"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//选择本地主机，127.0.1.1</span>
-    db<span class="token punctuation">.</span><span class="token function">setDatabaseName</span><span class="token punctuation">(</span>dsn<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//设置数据源名称</span>
-    db<span class="token punctuation">.</span><span class="token function">setUserName</span><span class="token punctuation">(</span><span class="token string">"G_bg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//登录用户</span>
-    db<span class="token punctuation">.</span><span class="token function">setPassword</span><span class="token punctuation">(</span><span class="token string">"*******"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//密码</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>db<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">//打开数据库</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span><span class="token string">"打开失败"</span><span class="token operator">&lt;&lt;</span>db<span class="token punctuation">.</span><span class="token function">lastError</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">else</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span><span class="token string">"database open success!"</span><span class="token punctuation">;</span>
-        QSqlQuery <span class="token function">query</span><span class="token punctuation">(</span>db<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        query<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token string">"SELECT * FROM UserInformation"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>query<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token function">qDebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>query<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLongLong</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span>query<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>\
-                   <span class="token operator">&lt;&lt;</span>query<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBool</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>query<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        db<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//PureChatServer w;</span>
-    <span class="token comment" spellcheck="true">//w.show();</span>
-    <span class="token keyword">return</span> a<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="https://img-blog.csdnimg.cn/2020052421511668.png#pic_center" alt="在这里插入图片描述"><br>&emsp;&emsp;当时我在创建数据源出现了连不上的一些问题，在前一篇SQL Servers身份验证中解决。</p>
+<h5 id="主要功能："><a href="#主要功能：" class="headerlink" title="主要功能："></a>主要功能：</h5><p>1、PureChatServer中提到的功能。<br>2、查看好友及群信息。<br>3、头像功能。</p>
+<br>
+
+<h5 id="功能详细介绍："><a href="#功能详细介绍：" class="headerlink" title="功能详细介绍："></a>功能详细介绍：</h5><p>1、略。<br>2、查看好友及群信息，群昵称，群头像可更改。</p>
+<h5 id="缺点及不足："><a href="#缺点及不足：" class="headerlink" title="缺点及不足："></a>缺点及不足：</h5><p>貌似一身缺点。。</p>
+<br>
+
+<p>&emsp;&emsp;本来想用udp发送接收消息，还是没改。懒的改了。。还是暂时告一段落吧。总是熬夜，长期坐着不动。脖子疼。服务器端和客户端都有很多缺点，希望某些地方对你有帮助（虽然不太可能）。<br>&emsp;&emsp;溜了溜了。。</p>
 
             </div>
             <hr>
@@ -501,7 +383,7 @@
         </li>
         <li class="post-license-link">
             <strong>本文链接：</strong>
-            <a href="https://frankgbg.top/posts/10008/">QT访问SQL Server</a>
+            <a href="https://frankgbg.top/posts/10012/">PureChatClient,聊天软件客户端</a>
         </li>
         <li class="post-license-statement">
             <strong>版权声明： </strong>
@@ -672,7 +554,7 @@
         repo: 'frankgbg.github.io',
         owner: 'frankgbg',
         admin: "frankgbg",
-        id: '2020-05-24T21-58-20',
+        id: '2020-06-10T15-34-39',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
     gitalk.render('gitalk-container');
@@ -694,27 +576,28 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/10009/">
+                <a href="/posts/10012/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="阿里云云服务器ECS简单使用">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="PureChatClient,聊天软件客户端">
                         
-                        <span class="card-title">阿里云云服务器ECS简单使用</span>
+                        <span class="card-title">PureChatClient,聊天软件客户端</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            聊天软件开发三
+                            聊天软件开发,PureChat
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -727,11 +610,16 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/云服务器/" target="_blank">
-                        <span class="chip bg-color">云服务器</span>
+                    <a href="/tags/C/" target="_blank">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/客户端/" target="_blank">
+                        <span class="chip bg-color">客户端</span>
                     </a>
                     
                 </div>
@@ -745,24 +633,24 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/10007/">
+                <a href="/posts/10011/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="SQL Server设置SQL Server身份验证">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="PureChatServer,聊天软件服务器端">
                         
-                        <span class="card-title">SQL Server设置SQL Server身份验证</span>
+                        <span class="card-title">PureChatServer,聊天软件服务器端</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            聊天软件开发一
+                            聊天软件开发,PureChat
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-24
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-04
                             </span>
                         <span class="publish-author">
                             
@@ -779,8 +667,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/SQL-Server/" target="_blank">
-                        <span class="chip bg-color">SQL Server</span>
+                    <a href="/tags/C/" target="_blank">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/服务器端/" target="_blank">
+                        <span class="chip bg-color">服务器端</span>
                     </a>
                     
                 </div>
@@ -831,58 +723,6 @@
 </script>
 
 
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget">
-            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            // headingsOffset: -205,
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-    });
-</script>
     
 
 </main>
